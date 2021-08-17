@@ -1,0 +1,7 @@
+releases/
+
+*.bikey
+*.biprivatekey
+*.bisign
+*.exe
+*.pbo
