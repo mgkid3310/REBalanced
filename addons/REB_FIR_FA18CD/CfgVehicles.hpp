@@ -67,7 +67,7 @@ class CfgVehicles {
 
 		class EventHandlers: EventHandlers {
 			class FIR_FA18C_EH: FIR_FA18C_EH {
-				// init = "";
+				init = "_this call REB_FIR_FA18CD_fnc_initFA18C";
 			};
 		};
 
