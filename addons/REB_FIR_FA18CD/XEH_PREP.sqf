@@ -1,0 +1,2 @@
+REB_FIR_FA18CD_fnc_eachFrameHandlerFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\scripts\fnc_eachFrameHandlerFA18C.sqf";
+REB_FIR_FA18CD_fnc_initFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\scripts\fnc_initFA18C.sqf";
