@@ -71,18 +71,18 @@ class CfgVehicles {
 			};
 		};
 
-		class REB_AWESome_config {
+		class AWESome_ConfigData {
 			enabled = 1;
 
-			AB_threshold = 0.9;
-			ref_thrust = 157.4; //kN
-			mil_thrust = 106.4; //kN
-			AB_thrust = 157.4; //kN
-			AB_ffMultiplier = 3.0214;
+			abThrottle = 0.9;
+			refThrust = 157.4; //kN
+			milThrust = 106.4; //kN
+			abThrust = 157.4; //kN
+			abFuelMultiplier = 3.0214;
 
-			gross_weight = 16769;
-			zf_weight = 10443;
-			fuel_weight = 4930;
+			grossWeight = 16769;
+			zfWeight = 10443;
+			fuelWeight = 4930;
 		};
 	};
 
