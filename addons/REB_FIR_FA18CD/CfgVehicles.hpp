@@ -11,7 +11,8 @@ class CfgVehicles {
 		landingSpeed = 260;
 		landingAoa = "rad 12.7";
 		fuelCapacity = 633.3703;
-		acceleration = 300;
+		acceleration = 200;
+		brakeDistance = 250;
 
 		stallSpeed = 220;
 		stallWarningTreshold = 0.12;
