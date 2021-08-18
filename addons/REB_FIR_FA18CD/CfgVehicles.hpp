@@ -1,6 +1,9 @@
 class Plane_Fighter_03_base_F;
 class EventHandlers;
 class FIR_FA18C_EH;
+class UserActions;
+class Afterburner;
+class Afterburner_1;
 
 class CfgVehicles {
 	class FIR_FA18_Base: Plane_Fighter_03_base_F {
@@ -68,6 +71,15 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			class FIR_FA18C_EH: FIR_FA18C_EH {
 				init = "_this call REB_FIR_FA18CD_fnc_initFA18C";
+			};
+		};
+
+		class UserActions: UserActions {
+			class Afterburner: Afterburner {
+				condition = "false";
+			};
+			class Afterburner_1: Afterburner_1 {
+				condition = "false";
 			};
 		};
 
