@@ -114,8 +114,9 @@ class CfgVehicles {
 			zfWeight = 10443;
 			fuelWeight = 4930;
 
+			useExternalFuel = 1;
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
-			setExternalFuel = "_this call REB_FIR_FA18CD_fnc_setExternalFuel";
+			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 		};
 	};
 
