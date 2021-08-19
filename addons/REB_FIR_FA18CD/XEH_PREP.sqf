@@ -1,2 +1,7 @@
-REB_FIR_FA18CD_fnc_eachFrameHandlerFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\scripts\fnc_eachFrameHandlerFA18C.sqf";
-REB_FIR_FA18CD_fnc_initFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\scripts\fnc_initFA18C.sqf";
+REB_FIR_FA18CD_fnc_eachFrameHandlerFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_eachFrameHandlerFA18C.sqf";
+REB_FIR_FA18CD_fnc_fueltankJettison = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_fueltankJettison.sqf";
+REB_FIR_FA18CD_fnc_initFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_initFA18C.sqf";
+REB_FIR_FA18CD_fnc_loadoutFuelFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_loadoutFuelFA18C.sqf";
+REB_FIR_FA18CD_fnc_loadoutPostFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_loadoutPostFA18C.sqf";
+REB_FIR_FA18CD_fnc_loadoutPreFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_loadoutPreFA18C.sqf";
+REB_FIR_FA18CD_fnc_setExternalFuel = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_setExternalFuel.sqf";

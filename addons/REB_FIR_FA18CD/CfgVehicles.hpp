@@ -1,9 +1,12 @@
 class Plane_Fighter_03_base_F;
+class AMSData;
+class JettisonSystem;
 class EventHandlers;
 class FIR_FA18C_EH;
 class UserActions;
 class Afterburner;
 class Afterburner_1;
+class ECM_ON;
 
 class CfgVehicles {
 	class FIR_FA18_Base: Plane_Fighter_03_base_F {
@@ -69,6 +72,17 @@ class CfgVehicles {
 		aileronCoef[] = {0.0, 0.11, 0.32, 0.72, 0.98, 1.05, 1.07, 1.08, 1.09, 1.09, 1.05, 1.02, 0.99, 0.80, 0.70, 0.60};
 		rudderCoef[] = {0.0, 0.24, 1.3, 2.2, 2.3, 2.4, 2.5, 2.5, 2.6, 2.6, 2.4, 2.2, 2.0, 1.3, 1.15, 1.05};
 
+		class AMSData: AMSData {
+			loadout_pre = "REB_FIR_FA18CD\functions\fnc_loadoutPreFA18C.sqf";
+			loadout_post = "REB_FIR_FA18CD\functions\fnc_loadoutPostFA18C.sqf";
+			CustomFuelScript = "REB_FIR_FA18CD\functions\fnc_loadoutFuelFA18C.sqf";
+		};
+
+		class JettisonSystem: JettisonSystem {
+			JettisonScript = "REB_FIR_FA18CD\functions\fnc_fueltankJettison.sqf";
+			Fuel_Internal = 1;
+		};
+
 		class EventHandlers: EventHandlers {
 			class FIR_FA18C_EH: FIR_FA18C_EH {
 				init = "_this call REB_FIR_FA18CD_fnc_initFA18C";
@@ -81,6 +95,9 @@ class CfgVehicles {
 			};
 			class Afterburner_1: Afterburner_1 {
 				condition = "false";
+			};
+			class ECM_ON: ECM_ON {
+				shortcut = "User2";
 			};
 		};
 
@@ -96,6 +113,9 @@ class CfgVehicles {
 			grossWeight = 16769;
 			zfWeight = 10443;
 			fuelWeight = 4930;
+
+			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
+			setExternalFuel = "_this call REB_FIR_FA18CD_fnc_setExternalFuel";
 		};
 	};
 
