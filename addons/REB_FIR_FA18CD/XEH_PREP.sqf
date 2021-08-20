@@ -1,3 +1,4 @@
+REB_FIR_FA18CD_fnc_checkEngineAB = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_checkEngineAB.sqf";
 REB_FIR_FA18CD_fnc_eachFrameHandlerFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_eachFrameHandlerFA18C.sqf";
 REB_FIR_FA18CD_fnc_fueltankJettison = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_fueltankJettison.sqf";
 REB_FIR_FA18CD_fnc_initFA18C = compile preProcessFileLineNumbers "REB_FIR_FA18CD\functions\fnc_initFA18C.sqf";

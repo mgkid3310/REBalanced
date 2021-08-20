@@ -72,6 +72,8 @@ class CfgVehicles {
 		aileronCoef[] = {0.0, 0.11, 0.32, 0.72, 0.98, 1.05, 1.07, 1.08, 1.09, 1.09, 1.05, 1.02, 0.99, 0.80, 0.70, 0.60};
 		rudderCoef[] = {0.0, 0.24, 1.3, 2.2, 2.3, 2.4, 2.5, 2.5, 2.6, 2.6, 2.4, 2.2, 2.0, 1.3, 1.15, 1.05};
 
+		unitInfoType = "Rsc_REB_FA18CD_UnitInfo";
+
 		class AMSData: AMSData {
 			loadout_pre = "REB_FIR_FA18CD\functions\fnc_loadoutPreFA18C.sqf";
 			loadout_post = "REB_FIR_FA18CD\functions\fnc_loadoutPostFA18C.sqf";
