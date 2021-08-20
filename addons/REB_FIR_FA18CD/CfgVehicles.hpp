@@ -36,14 +36,14 @@ class CfgVehicles {
 		aileronSensitivity = 1.4;
 		rudderInfluence = 0.86;
 
-		// airFrictionCoefs0[] = {0, 0, 0};
-		// airFrictionCoefs1[] = {0.1, 0.05, 0.006};
-		// airFrictionCoefs2[] = {0.001, 0.005, 0.00006};
+		airFrictionCoefs0[] = {0, 0, 0};
+		airFrictionCoefs1[] = {0.1, 0.05, 0.006};
+		airFrictionCoefs2[] = {0.001, 0.005, 0.00006};
 		// draconicForceXCoef = 7;
 		// draconicForceYCoef = 1.1;
 		// draconicForceZCoef = 1;
-		// draconicTorqueXCoef[] = {4, 5.1, 6.19, 7, 7.7, 8.3, 9, 9.1, 9.2, 9.2, 9.2};
-		// draconicTorqueYCoef[] = {6.8, 5.5, 4, 1.5, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		// draconicTorqueXCoef = 2.5;
+		// draconicTorqueYCoef = 2.5;
 
 		thrustCoef[] = {
 			1.406605218, // 0km/h
@@ -68,9 +68,9 @@ class CfgVehicles {
 			0 // 2705.5km/h
 		};
 		envelope[] = {0.0, 0.3, 0.6, 1.5, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
-		elevatorCoef[] = {0.0, 0.30, 0.38, 0.42, 0.53, 0.80, 0.59, 0.58, 0.55, 0.52, 0.50, 0.48, 0.44, 0.42, 0.3, 0.28};
-		aileronCoef[] = {0.0, 0.11, 0.32, 0.72, 0.98, 1.05, 1.07, 1.08, 1.09, 1.09, 1.05, 1.02, 0.99, 0.80, 0.70, 0.60};
-		rudderCoef[] = {0.0, 0.24, 1.3, 2.2, 2.3, 2.4, 2.5, 2.5, 2.6, 2.6, 2.4, 2.2, 2.0, 1.3, 1.15, 1.05};
+		// elevatorCoef[] = {0.0, 0.30, 0.38, 0.42, 0.53, 0.80, 0.59, 0.58, 0.55, 0.52, 0.50, 0.48, 0.44, 0.42, 0.3, 0.28};
+		// aileronCoef[] = {0.0, 0.11, 0.32, 0.72, 0.98, 1.05, 1.07, 1.08, 1.09, 1.09, 1.05, 1.02, 0.99, 0.80, 0.70, 0.60};
+		// rudderCoef[] = {0.0, 0.24, 1.3, 2.2, 2.3, 2.4, 2.5, 2.5, 2.6, 2.6, 2.4, 2.2, 2.0, 1.3, 1.15, 1.05};
 
 		unitInfoType = "Rsc_REB_FA18CD_UnitInfo";
 
