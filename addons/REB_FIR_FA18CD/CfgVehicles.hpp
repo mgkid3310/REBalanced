@@ -1,4 +1,3 @@
-class Plane_Fighter_03_base_F;
 class AMSData;
 class JettisonSystem;
 class EventHandlers;
@@ -9,6 +8,7 @@ class Afterburner_1;
 class ECM_ON;
 
 class CfgVehicles {
+	class Plane_Fighter_03_base_F;
 	class FIR_FA18_Base: Plane_Fighter_03_base_F {
 		maxSpeed = 1900;
 		landingSpeed = 260;
@@ -116,7 +116,7 @@ class CfgVehicles {
 			zfWeight = 10443;
 			fuelWeight = 4930;
 
-			useExternalFuel = 1;
+			useExternalFuel = 1; // draw fuel from external tank to internal tank via AWESome
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 		};
