@@ -1,11 +1,4 @@
-class AMSData;
-class JettisonSystem;
-class EventHandlers;
-class FIR_FA18C_EH;
-class UserActions;
-class Afterburner;
-class Afterburner_1;
-class ECM_ON;
+#include "baseClasses.hpp"
 
 class CfgVehicles {
 	class Plane_Fighter_03_base_F;
@@ -15,7 +8,7 @@ class CfgVehicles {
 		landingAoa = "rad 12.7";
 		fuelCapacity = 633.3703;
 		acceleration = 200;
-		brakeDistance = 250;
+		brakeDistance = 400;
 
 		stallSpeed = 220;
 		stallWarningTreshold = 0.12;
@@ -28,22 +21,22 @@ class CfgVehicles {
 		flapsFrictionCoef = 0.37;
 		gearsUpFrictionCoef = 0.8;
 
-		elevatorControlsSensitivityCoef = 4;
-		aileronControlsSensitivityCoef = 3.5;
-		rudderControlsSensitivityCoef = 4;
-		wheelSteeringSensitivity = 1.2;
-		elevatorSensitivity = 1.4;
-		aileronSensitivity = 1.4;
+		elevatorControlsSensitivityCoef = 4.0;
+		aileronControlsSensitivityCoef = 4.0;
+		rudderControlsSensitivityCoef = 2.0;
+		wheelSteeringSensitivity = 1.4;
+		elevatorSensitivity = 1.0;
+		aileronSensitivity = 1.0;
 		rudderInfluence = 0.86;
 
 		airFrictionCoefs0[] = {0, 0, 0};
-		airFrictionCoefs1[] = {0.1, 0.05, 0.006};
-		airFrictionCoefs2[] = {0.001, 0.005, 0.00006};
-		// draconicForceXCoef = 7;
-		// draconicForceYCoef = 1.1;
-		// draconicForceZCoef = 1;
-		// draconicTorqueXCoef = 2.5;
-		// draconicTorqueYCoef = 2.5;
+		airFrictionCoefs1[] = {0.1, 0.04, 0.004};
+		airFrictionCoefs2[] = {0.001, 0.004, 0.00004};
+		draconicForceXCoef = 3.0;
+		draconicForceYCoef = 1.1;
+		draconicForceZCoef = 1.0;
+		draconicTorqueXCoef[] = {4.0, 5.1, 6.1, 7.0, 7.7, 8.3, 9, 9.1, 9.2, 9.2, 9.2};
+		draconicTorqueYCoef[] = {6.8, 5.5, 4.0, 1.5, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 		thrustCoef[] = {
 			1.406605218, // 0km/h
@@ -67,12 +60,14 @@ class CfgVehicles {
 			0,
 			0 // 2705.5km/h
 		};
-		envelope[] = {0.0, 0.3, 0.6, 1.5, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
-		// elevatorCoef[] = {0.0, 0.30, 0.38, 0.42, 0.53, 0.80, 0.59, 0.58, 0.55, 0.52, 0.50, 0.48, 0.44, 0.42, 0.3, 0.28};
-		// aileronCoef[] = {0.0, 0.11, 0.32, 0.72, 0.98, 1.05, 1.07, 1.08, 1.09, 1.09, 1.05, 1.02, 0.99, 0.80, 0.70, 0.60};
-		// rudderCoef[] = {0.0, 0.24, 1.3, 2.2, 2.3, 2.4, 2.5, 2.5, 2.6, 2.6, 2.4, 2.2, 2.0, 1.3, 1.15, 1.05};
+		envelope[] = {0.0, 0.5, 0.6, 1.5, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
+		elevatorCoef[] = {0.6, 0.8, 0.9, 1.0, 1.1, 1.2, 1.2, 1.3, 1.3, 1.3, 1.4, 1.4, 1.4};
+		aileronCoef[] = {0.6, 0.8, 0.9, 1.0, 1.1, 1.2, 1.2, 1.3, 1.3, 1.3, 1.4, 1.4, 1.4};
+		rudderCoef[] = {0.6, 0.8, 2.0, 2.2, 2.3, 2.4, 2.3, 2.2, 2.1, 2.0, 1.2};
 
 		unitInfoType = "Rsc_REB_FA18CD_UnitInfo";
+
+		#include "CfgMFD.hpp"
 
 		class AMSData: AMSData {
 			loadout_pre = "REB_FIR_FA18CD\functions\fnc_loadoutPreFA18C.sqf";
