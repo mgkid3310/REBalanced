@@ -127,7 +127,7 @@ class MFD: MFD {
 						{},
 						{"VelocityVector_B", {0.000000, -0.0120000}, 1},
 						{"VelocityVector_B", {0.000000, -0.050000}, 1}
-					};*/ 
+					}; */
 				};
 			};
 		};
@@ -141,7 +141,7 @@ class MFD: MFD {
 				text = "";
 			};
 			class MachNumber: MachNumber {
-				sourceScale = 0.00288;
+				sourceScale = 0.002915;
 				sourceLength = 1;
 				sourcePrecision = 2;
 				pos[] = {{0.09, 0.48}, 1};
