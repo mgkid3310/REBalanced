@@ -1,14 +1,12 @@
-#include "baseClasses.hpp"
-
 class CfgVehicles {
 	class Plane_Fighter_03_base_F;
 	class FIR_FA18_Base: Plane_Fighter_03_base_F {
 		maxSpeed = 1900;
-		landingSpeed = 260;
-		landingAoa = "rad 12.7";
 		fuelCapacity = 633.3703;
 		acceleration = 200;
 		brakeDistance = 400;
+		landingSpeed = 260;
+		landingAoa = "rad 12.7";
 
 		stallSpeed = 220;
 		stallWarningTreshold = 0.12;
@@ -60,6 +58,7 @@ class CfgVehicles {
 			0,
 			0 // 2705.5km/h
 		};
+		angleOfIndicence = -0.02618588276; // -1.5deg
 		envelope[] = {0.0, 0.4, 0.6, 1.5, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
 		elevatorCoef[] = {0.3, 0.294, 0.285, 0.27, 0.252, 0.234, 0.225, 0.3, 0.57, 0.45, 0.36, 0.3, 0.27, 0.246, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24};
 		aileronCoef[] = {0.4, 0.392, 0.38, 0.36, 0.336, 0.312, 0.3, 0.4, 0.76, 0.58, 0.48, 0.4, 0.352, 0.328, 0.32, 0.32, 0.32, 0.32, 0.32, 0.32};
@@ -67,63 +66,33 @@ class CfgVehicles {
 
 		unitInfoType = "Rsc_REB_FA18CD_UnitInfo";
 
-		class Wheels: Wheels {
-			class Wheel_1: Wheel_1 {
-				mass = 80;
-				MOI = 30;
-				dampingRate = 0.25;
-				dampingRateDamaged = 1;
-				dampingRateDestroyed = 1000;
-				maxBrakeTorque = 1500;
-				maxCompression = 0.2;
-				maxDroop = 0.6;
-				sprungMass = 4000;
-				springStrength = 250000;
-				springDamperRate = 70000;
-			};
-			class Wheel_2: Wheel_1 {
-				mass = 80;
-				MOI = 30;
-				dampingRate = 0.25;
-				dampingRateDamaged = 1;
-				dampingRateDestroyed = 1000;
-				maxBrakeTorque = 1500;
-				maxCompression = 0.2;
-				maxDroop = 0.6;
-				sprungMass = 4250;
-				springStrength = 370000;
-				springDamperRate = 88000;
-			};
-			class Wheel_3: Wheel_2 {};
-		};
-
 		#include "CfgMFD.hpp"
 
-		class AMSData: AMSData {
+		class AMSData {
 			loadout_pre = "REB_FIR_FA18CD\functions\fnc_loadoutPreFA18C.sqf";
 			loadout_post = "REB_FIR_FA18CD\functions\fnc_loadoutPostFA18C.sqf";
 			CustomFuelScript = "REB_FIR_FA18CD\functions\fnc_loadoutFuelFA18C.sqf";
 		};
 
-		class JettisonSystem: JettisonSystem {
+		class JettisonSystem {
 			JettisonScript = "REB_FIR_FA18CD\functions\fnc_fueltankJettison.sqf";
 			Fuel_Internal = 1;
 		};
 
-		class EventHandlers: EventHandlers {
-			class FIR_FA18C_EH: FIR_FA18C_EH {
+		class EventHandlers {
+			class FIR_FA18C_EH {
 				init = "_this call REB_FIR_FA18CD_fnc_initFA18C";
 			};
 		};
 
-		class UserActions: UserActions {
-			class Afterburner: Afterburner {
+		class UserActions {
+			class Afterburner {
 				condition = "false";
 			};
-			class Afterburner_1: Afterburner_1 {
+			class Afterburner_1 {
 				condition = "false";
 			};
-			class ECM_ON: ECM_ON {
+			class ECM_ON {
 				shortcut = "User2";
 			};
 		};
