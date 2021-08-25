@@ -1,3 +1,6 @@
+class Wheels;
+class Wheel_1;
+
 class MFD;
 class HUD_1;
 class HUD_Horizon;

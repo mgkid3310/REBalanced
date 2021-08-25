@@ -67,6 +67,36 @@ class CfgVehicles {
 
 		unitInfoType = "Rsc_REB_FA18CD_UnitInfo";
 
+		class Wheels: Wheels {
+			class Wheel_1: Wheel_1 {
+				mass = 80;
+				MOI = 30;
+				dampingRate = 0.25;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				maxBrakeTorque = 1500;
+				maxCompression = 0.2;
+				maxDroop = 0.6;
+				sprungMass = 4000;
+				springStrength = 250000;
+				springDamperRate = 70000;
+			};
+			class Wheel_2: Wheel_1 {
+				mass = 80;
+				MOI = 30;
+				dampingRate = 0.25;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				maxBrakeTorque = 1500;
+				maxCompression = 0.2;
+				maxDroop = 0.6;
+				sprungMass = 4250;
+				springStrength = 370000;
+				springDamperRate = 88000;
+			};
+			class Wheel_3: Wheel_2 {};
+		};
+
 		#include "CfgMFD.hpp"
 
 		class AMSData: AMSData {
