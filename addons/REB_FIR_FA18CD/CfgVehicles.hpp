@@ -23,8 +23,8 @@ class CfgVehicles {
 		aileronControlsSensitivityCoef = 4.0;
 		rudderControlsSensitivityCoef = 2.0;
 		wheelSteeringSensitivity = 1.4;
-		elevatorSensitivity = 1.4;
-		aileronSensitivity = 1.4;
+		elevatorSensitivity = 1.8;
+		aileronSensitivity = 1.8;
 		rudderInfluence = 0.86;
 
 		airFrictionCoefs0[] = {0, 0, 0};
@@ -60,20 +60,20 @@ class CfgVehicles {
 		};
 		angleOfIndicence = 0.0523599; // 3deg
 		envelope[] = {0.0, 0.4, 0.6, 1.5, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
-		elevatorCoef[] = {0.3, 0.294, 0.285, 0.27, 0.252, 0.234, 0.225, 0.3, 0.57, 0.45, 0.36, 0.3, 0.27, 0.246, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24};
+		elevatorCoef[] = {0.9, 0.882, 0.570, 0.27, 0.252, 0.234, 0.225, 0.3, 0.57, 0.45, 0.36, 0.3, 0.27, 0.246, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24};
 		aileronCoef[] = {0.4, 0.392, 0.38, 0.36, 0.336, 0.312, 0.3, 0.4, 0.76, 0.58, 0.48, 0.4, 0.352, 0.328, 0.32, 0.32, 0.32, 0.32, 0.32, 0.32};
 		rudderCoef[] = {0.6, 0.588, 0.57, 0.54, 0.504, 0.468, 0.45, 0.6, 1.14, 0.9, 0.72, 0.6, 0.54, 0.492, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48};
 
 		unitInfoType = "Rsc_REB_FA18CD_UnitInfo";
 
-		class Wheels {
+		/* class Wheels {
 			class Wheel_1 {
-				/* mass = 80;
-				MOI = 30;
-				dampingRate = 0.25;
-				dampingRateDamaged = 1;
-				dampingRateDestroyed = 1000;
-				maxBrakeTorque = 1500; */
+				// mass = 80;
+				// MOI = 30;
+				// dampingRate = 0.25;
+				// dampingRateDamaged = 1;
+				// dampingRateDestroyed = 1000;
+				// maxBrakeTorque = 1500;
 				maxCompression = 0.0;
 				maxDroop = 0.6;
 				sprungMass = 4000;
@@ -81,12 +81,12 @@ class CfgVehicles {
 				// springDamperRate = 70000;
 			};
 			class Wheel_2: Wheel_1 {
-				/* mass = 80;
-				MOI = 30;
-				dampingRate = 0.25;
-				dampingRateDamaged = 1;
-				dampingRateDestroyed = 1000;
-				maxBrakeTorque = 1500; */
+				// mass = 80;
+				// MOI = 30;
+				// dampingRate = 0.25;
+				// dampingRateDamaged = 1;
+				// dampingRateDestroyed = 1000;
+				// maxBrakeTorque = 1500;
 				maxCompression = 0.2;
 				maxDroop = 0.6;
 				sprungMass = 4250;
@@ -94,7 +94,7 @@ class CfgVehicles {
 				// springDamperRate = 88000;
 			};
 			class Wheel_3: Wheel_2 {};
-		};
+		}; */
 
 		#include "CfgMFD.hpp"
 
