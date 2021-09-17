@@ -7,8 +7,8 @@ class MFD {
 		};
 		class Draw {
 			class Speed_Scale_Top {
-				clipTL[]={0, 0};
-				clipBR[]={1, 0.395};
+				clipTL[] = {0, 0};
+				clipBR[] = {1, 0.395};
 				class speed_scale {
 					sourceScale = 1.852;
 					step = -10;
@@ -18,8 +18,8 @@ class MFD {
 				};
 			};
 			class Speed_Scale_Right {
-				clipTL[]={0.165, 0.395};
-				clipBR[]={1, 0.475};
+				clipTL[] = {0.165, 0.395};
+				clipBR[] = {1, 0.475};
 				class speed_scale {
 					sourceScale = 1.852;
 					step = -10;
@@ -29,8 +29,8 @@ class MFD {
 				};
 			};
 			class Speed_Scale_Bottom {
-				clipTL[]={0, 0.475};
-				clipBR[]={1, 1};
+				clipTL[] = {0, 0.475};
+				clipBR[] = {1, 1};
 				class speed_scale {
 					sourceScale = 1.852;
 					step = -10;
@@ -43,8 +43,8 @@ class MFD {
 				sourceScale = 1.852;
 			};
 			class Altitude_Scale_Top {
-				clipTL[]={0, 0};
-				clipBR[]={1, 0.395};
+				clipTL[] = {0, 0};
+				clipBR[] = {1, 0.395};
 				class altitude_scale {
 					sourceScale = 3.28;
 					step = 100;
@@ -54,8 +54,8 @@ class MFD {
 				};
 			};
 			class Altitude_Scale_Left {
-				clipTL[]={0, 0.395};
-				clipBR[]={0.835, 0.475};
+				clipTL[] = {0, 0.395};
+				clipBR[] = {0.835, 0.475};
 				class altitude_scale {
 					sourceScale = 3.28;
 					step = 100;
@@ -65,8 +65,8 @@ class MFD {
 				};
 			};
 			class Altitude_Scale_Bottom {
-				clipTL[]={0, 0.475};
-				clipBR[]={1, 1};
+				clipTL[] = {0, 0.475};
+				clipBR[] = {1, 1};
 				class altitude_scale {
 					sourceScale = 3.28;
 					step = 100;
