@@ -148,7 +148,7 @@ class MFD {
 				right[] = {{0.12, 0.48}, 1};
 				down[] = {{0.09, 0.51}, 1};
 			};
-			class AltNumber {
+			class AltNumber: SpeedNumber {
 				sourceScale = 3.28;
 			};
 			class RadarAltitude_Number {
