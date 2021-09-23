@@ -39,26 +39,26 @@ class CfgVehicles {
 		draconicTorqueYCoef[] = {6.8, 4.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 		thrustCoef[] = {
-			1.406605218, // 0km/h
-			1.295461551, // 142.5km/h
-			1.254255284,
-			1.270021576,
-			1.329795586,
-			1.420612472,
-			1.529507395,
-			1.643515513,
-			1.749671984,
-			1.835011969,
-			1.886570625,
-			1.891383113,
-			1.836484590,
-			1.708910216,
-			1.495695151,
-			1.183874552,
-			0.760483579,
-			0.212557392, // 2422.5km/h
+			1.417300744,
+			1.305311964,
+			1.263792373,
+			1.279678549,
+			1.339907067,
+			1.431414506,
+			1.541137443,
+			1.656012454,
+			1.762976116,
+			1.848965008,
+			1.900915705,
+			1.905764786,
+			1.850448827,
+			1.721904405,
+			1.507068097,
+			1.192876481,
+			0.766266134,
+			0.214173633,
 			0,
-			0 // 2705.5km/h
+			0
 		};
 		angleOfIndicence = 0.0523599; // 3deg
 		envelope[] = {0.0, 0.4, 0.6, 1.5, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
@@ -67,36 +67,6 @@ class CfgVehicles {
 		rudderCoef[] = {0.6, 0.588, 0.57, 0.54, 0.504, 0.468, 0.45, 0.6, 1.14, 0.9, 0.72, 0.6, 0.54, 0.492, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48};
 
 		unitInfoType = "Rsc_REB_FA18CD_UnitInfo";
-
-		/* class Wheels {
-			class Wheel_1 {
-				// mass = 80;
-				// MOI = 30;
-				// dampingRate = 0.25;
-				// dampingRateDamaged = 1;
-				// dampingRateDestroyed = 1000;
-				// maxBrakeTorque = 1500;
-				maxCompression = 0.0;
-				maxDroop = 0.6;
-				sprungMass = 4000;
-				// springStrength = 250000;
-				// springDamperRate = 70000;
-			};
-			class Wheel_2: Wheel_1 {
-				// mass = 80;
-				// MOI = 30;
-				// dampingRate = 0.25;
-				// dampingRateDamaged = 1;
-				// dampingRateDestroyed = 1000;
-				// maxBrakeTorque = 1500;
-				maxCompression = 0.2;
-				maxDroop = 0.6;
-				sprungMass = 4250;
-				// springStrength = 370000;
-				// springDamperRate = 88000;
-			};
-			class Wheel_3: Wheel_2 {};
-		}; */
 
 		#include "CfgMFD.hpp"
 
