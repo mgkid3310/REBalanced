@@ -25,10 +25,8 @@ if (_hp8 in _clean_ary) then {
 	_vehicle animate ["hp8_hide", 1, true];
 };
 
-private _fueltankCount = {_x == "FIR_FA18_Fueltank_P_1rnd_M"} count _pylonlist;
-
 _vehicle setFuel 1;
-_vehicle setVariable ["AWESome_fuelEXT", _fueltankCount * 2310 / 4930];
+[_vehicle] call REB_FIR_FA18CD_fnc_initExternalFuel;
 
 [_vehicle, "FIR_M61A2_578rnd_M", "FIR_M61A2_TWAS_412rnd_M"] execVM "FIR_AirWeaponSystem_US\Script\ATMS\ATMS_Init.sqf";
 
