@@ -115,6 +115,9 @@ class CfgVehicles {
 			useExternalFuel = 1; // draw fuel from external tank to internal tank via AWESome
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
+
+			maxExternalFuel = "3 * 2310 / 4930";
+			externalTank[] = {"FIR_FA18_Fueltank_P_1rnd_M", "2310 / 4930"};
 		};
 	};
 
@@ -261,6 +264,9 @@ class CfgVehicles {
 			useExternalFuel = 1; // draw fuel from external tank to internal tank via AWESome
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
+
+			maxExternalFuel = "3 * 2310 / 4930";
+			externalTank[] = {"FIR_FA18_Fueltank_P_1rnd_M", "2310 / 4930"};
 		};
 	};
 };
