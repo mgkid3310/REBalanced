@@ -1,10 +1,4 @@
-private _vehicle = vehicle Player;
+execVM "FIR_FA18\sqs\Loadout\FA18_Refuel.sqf";
 
-_vehicle vehiclechat "Refueling..";
-
-sleep 5;
-
-_vehicle setFuel 1;
-[_vehicle] call REB_FIR_FA18CD_fnc_initExternalFuel;
-
-_vehicle vehiclechat "Refuel is Completed!";
+vehicle player setFuel 1;
+[vehicle player] call REB_FIR_FA18CD_fnc_initExternalFuel;
