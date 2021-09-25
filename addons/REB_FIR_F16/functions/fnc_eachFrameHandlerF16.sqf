@@ -1,6 +1,6 @@
 _thisArgs params ["_vehicle"];
 
-if !(local _vehicle) exitWith {};
+if !(player in _vehicle) exitWith {};
 
 private _unitInfo = uiNamespace getVariable ["HUD", nil];
 // private _isHookLowered = _vehicle animationPhase "tailhook" > 0.1;
