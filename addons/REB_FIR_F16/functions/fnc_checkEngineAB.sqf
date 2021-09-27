@@ -7,7 +7,7 @@ private _isThrottleAB = (airplaneThrottle _vehicle > _abThrottle) && (isEngineOn
 if !(alive _vehicle) exitWith {
 	removeMissionEventHandler ["EachFrame", _thisEventHandler];
 	if (_isNowAB) then {
-		_vehicle animate ["ABSwitch", 0];
+		_vehicle animate ["ABSwitch", 0, true];
 		[_vehicle] execVM getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "ABSystem" >> "ab_end_script");
 
 		(_unitInfo displayCtrl 9908) ctrlSetText "REB_FIR_F16\ui\FA18_Toggles_clear_ca.paa";
