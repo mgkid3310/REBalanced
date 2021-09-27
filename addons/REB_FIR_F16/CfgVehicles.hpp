@@ -113,8 +113,8 @@ class CfgVehicles {
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = "3 * 2310 / 4930";
-			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", "2310 / 4930", "FIR_F16C_center_Fueltank_P_1rnd_M", "0"};
+			maxExternalFuel = "3150 / 3200";
+			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", "1120 / 3200", "FIR_F16C_center_Fueltank_P_1rnd_M", "910 / 3200"};
 		};
 	};
 
