@@ -193,10 +193,10 @@ class CfgVehicles {
 		#include "config\F110-GE-129.hpp"
 	};
 	class FIR_F16C_CFTTEST: FIR_F16C { // not defined
-		#include "config\F110-GE-129.hpp"
+		#include "config\F110-GE-129CFT.hpp"
 	};
 	class FIR_F16C_Polish_CFT : FIR_F16C_CFTTEST { // Blk 52+
-		#include "config\F100-PW-229.hpp"
+		#include "config\F100-PW-229CFT.hpp"
 	};
 
 	class FIR_F16D_Base: Plane_Fighter_03_base_F {};
@@ -222,9 +222,9 @@ class CfgVehicles {
 		#include "config\F100-PW-229.hpp"
 	};
 	class FIR_F16D_CFTTEST: FIR_F16D { // not defined
-		#include "config\F110-GE-129.hpp"
+		#include "config\F110-GE-129CFT.hpp"
 	};
 	class FIR_F16D_Polish_CFT: FIR_F16D { // Blk 52+
-		#include "config\F100-PW-229.hpp"
+		#include "config\F100-PW-229CFT.hpp"
 	}; */
 };
