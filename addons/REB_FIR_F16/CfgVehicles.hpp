@@ -4,7 +4,7 @@ class CfgVehicles {
 	class Plane_Fighter_03_base_F;
 	class FIR_F16_Base: Plane_Fighter_03_base_F {
 		maxSpeed = 1900;
-		fuelCapacity = 648.5614;
+		fuelCapacity = 770.3335;
 		acceleration = 200;
 		brakeDistance = 400;
 		landingSpeed = 260;
@@ -39,24 +39,24 @@ class CfgVehicles {
 		draconicTorqueYCoef[] = {6.8, 4.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 		thrustCoef[] = {
-			1.625378232,
-			1.484210985,
-			1.425418333,
-			1.434018978,
-			1.495031624,
-			1.593474973,
-			1.714367729,
-			1.842728596,
-			1.963576275,
-			2.061929471,
-			2.122806887,
-			2.131227225,
-			2.072209189,
-			1.930771481,
-			1.691932806,
-			1.340711866,
-			0.862127364,
-			0.241198004,
+			1.563937818,
+			1.41846752,
+			1.353438319,
+			1.354435222,
+			1.407043234,
+			1.496847362,
+			1.609432613,
+			1.730383994,
+			1.845286509,
+			1.939725167,
+			1.999284973,
+			2.009550935,
+			1.956108057,
+			1.824541348,
+			1.600435812,
+			1.269376458,
+			0.820052966,
+			0.23144073,
 			0,
 			0
 		};
@@ -100,10 +100,10 @@ class CfgVehicles {
 			enabled = 1;
 
 			abThrottle = 0.9;
-			refThrust = 129.4; //kN
-			milThrust = 79.2; //kN
-			abThrust = 129.4; //kN
-			abFuelMultiplier = 4.6388;
+			refThrust = 124.6; //kN
+			milThrust = 75.6; //kN
+			abThrust = 124.6; //kN
+			abFuelMultiplier = 4.8897;
 
 			grossWeight = 12020;
 			zfWeight = 8573;
