@@ -1,0 +1,34 @@
+General License
+
+All contents in this folder follow CC BY-NC-SA 4.0, which can be viewed from the
+link below, and contents of subfolders inherits the same license. This license
+gives the right to authors mentioned in README.md file.
+
+http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Contributors in README.md file have the right to be listed alongside authors,
+and should be done so in all derived works.
+
+This license has exceptions as following:
+
+1. In case of a folder that contains a LICENSE file, all contents in the folder
+and its subfolders follow the license written in the LICENSE file instead of what's
+inherited from its upper folder.
+
+2. Some files may have seperate license or have different authors. Such files are
+listed in the 'Seperate Licenses' paragraph in this file or have details about
+its license and authors in its header.
+
+
+Seperate Licenses
+
+1. Following files are licensed under GNU General Public License v2.0 by CBATeam:
+/include/x/cba/addons/main/script_macros_common.hpp
+
+2. Following files are licensed under GNU General Public License v2.0 by acemod:
+/tools/build.py
+/tools/make.py
+
+3. I do not have nor know exact license of the files included in listed folders:
+/addons/orbis_gpws/sounds/
+Please let me know if there is a certain license to it.
