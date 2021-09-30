@@ -45,7 +45,7 @@ and fuel consumptions are based on real-world engine data.
 HUD now shows units in knots and feet, with vertical speed in  
 feet per minute. REBalanced also fixes HUD related bugs including  
 inverted speed bar, Mach number error when over Mach 1, and other  
-display related issues.
+display related issues.  
 &nbsp;
 
 4. Unit Info Panel Modification  
