@@ -1,4 +1,4 @@
-# REBalanced : Make flying feels real  
+# REBalanced : Make flying feel real  
 
 Rebalances Arma 3's planes to perform more like their real  
 life counterparts.  
