@@ -71,9 +71,9 @@ class CfgVehicles {
 		#include "CfgMFD.hpp"
 
 		class AMSData {
-			loadout_pre = "REB_FIR_F16\functions\fnc_loadoutPreFA18C.sqf";
-			loadout_post = "REB_FIR_F16\functions\fnc_loadoutPostFA18C.sqf";
-			CustomFuelScript = "REB_FIR_F16\functions\fnc_loadoutFuelFA18C.sqf";
+			loadout_pre = "REB_FIR_F16\functions\fnc_loadoutPreF16.sqf";
+			loadout_post = "REB_FIR_F16\functions\fnc_loadoutPostF16.sqf";
+			CustomFuelScript = "REB_FIR_F16\functions\fnc_loadoutFuelF16.sqf";
 		};
 
 		class JettisonSystem {
@@ -82,7 +82,7 @@ class CfgVehicles {
 		};
 
 		class EventHandlers: EventHandlers {
-			class FIR_FA18C_EH {
+			class FIR_F16_EH {
 				init = "_this call REB_FIR_F16_fnc_initF16";
 			};
 		};
