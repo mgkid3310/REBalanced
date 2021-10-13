@@ -25,9 +25,9 @@ class CfgVehicles {
 		aileronControlsSensitivityCoef = 4.0;
 		rudderControlsSensitivityCoef = 2.0;
 		wheelSteeringSensitivity = 1.4;
-		elevatorSensitivity = 1.8;
-		aileronSensitivity = 1.8;
-		rudderInfluence = 0.86;
+		elevatorSensitivity = 0.648;
+		aileronSensitivity = 1.080;
+		rudderInfluence = 0.344;
 
 		airFrictionCoefs0[] = {0, 0, 0};
 		airFrictionCoefs1[] = {0.1, 0.04, 0.004};
@@ -62,9 +62,9 @@ class CfgVehicles {
 		};
 		angleOfIndicence = 0.0523599; // 3deg
 		envelope[] = {0.0, 0.3, 0.8, 1.8, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
-		elevatorCoef[] = {0.36, 0.3528, 0.3456, 0.3384, 0.3312, 0.3276, 0.324, 0.3672, 0.81, 0.648, 0.522, 0.45, 0.396, 0.378, 0.3672, 0.36, 0.36, 0.36, 0.36, 0.36};
-		aileronCoef[] = {0.6, 0.588, 0.576, 0.564, 0.552, 0.546, 0.54, 0.612, 1.35, 1.08, 0.87, 0.75, 0.66, 0.63, 0.612, 0.6, 0.6, 0.6, 0.6, 0.6};
-		rudderCoef[] = {0.4, 0.392, 0.384, 0.376, 0.368, 0.364, 0.36, 0.408, 0.9, 0.72, 0.58, 0.5, 0.44, 0.42, 0.408, 0.4, 0.4, 0.4, 0.4, 0.4};
+		elevatorCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
+		aileronCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
+		rudderCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 
 		unitInfoType = "Rsc_REB_F16_UnitInfo";
 
