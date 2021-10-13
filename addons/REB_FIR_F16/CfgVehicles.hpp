@@ -25,8 +25,8 @@ class CfgVehicles {
 		aileronControlsSensitivityCoef = 4.0;
 		rudderControlsSensitivityCoef = 2.0;
 		wheelSteeringSensitivity = 1.4;
-		elevatorSensitivity = 0.648;
-		aileronSensitivity = 1.080;
+		elevatorSensitivity = 0.540;
+		aileronSensitivity = 0.720;
 		rudderInfluence = 0.344;
 
 		airFrictionCoefs0[] = {0, 0, 0};
