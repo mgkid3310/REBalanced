@@ -6,7 +6,7 @@ class CfgVehicles {
 	};
 
 	class FIR_F16D_Base: Plane_Fighter_03_base_F {
-		// delete draconicTorqueXCoef;
-		// delete draconicTorqueYCoef;
+		delete draconicTorqueXCoef;
+		delete draconicTorqueYCoef;
 	};
 };
