@@ -314,7 +314,7 @@ class CfgVehicles {
 			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", "1120 / 3200", "FIR_F16C_center_Fueltank_P_1rnd_M", "910 / 3200"};
 		};
 	};
-	/* class FIR_F16D: FIR_F16D_Base { // not defined
+	class FIR_F16D: FIR_F16D_Base { // not defined
 		#include "config\F110-GE-129.hpp"
 	};
 	class FIR_F16D_WP: FIR_F16D { // Blk 40 (80th FS)
@@ -340,5 +340,5 @@ class CfgVehicles {
 	};
 	class FIR_F16D_Polish_CFT: FIR_F16D { // Blk 52+
 		#include "config\F100-PW-229CFT.hpp"
-	}; */
+	};
 };
