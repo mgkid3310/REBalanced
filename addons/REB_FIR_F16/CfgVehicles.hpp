@@ -5,7 +5,7 @@ class CfgVehicles {
 	class FIR_F16_Base: Plane_Fighter_03_base_F { // Blk 50
 		maxSpeed = 1850;
 		fuelCapacity = 770.3335;
-		acceleration = 200;
+		// acceleration = 200;
 		brakeDistance = 400;
 		landingSpeed = 260;
 		landingAoa = "rad 12.7";
@@ -202,7 +202,7 @@ class CfgVehicles {
 	class FIR_F16D_Base: Plane_Fighter_03_base_F { // Blk 50
 		maxSpeed = 1850;
 		fuelCapacity = 770.3335;
-		acceleration = 200;
+		// acceleration = 200;
 		brakeDistance = 400;
 		landingSpeed = 260;
 		landingAoa = "rad 12.7";
