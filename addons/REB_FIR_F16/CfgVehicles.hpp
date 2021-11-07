@@ -12,8 +12,8 @@ class CfgVehicles {
 
 		stallSpeed = 220;
 		stallWarningTreshold = 0.12;
-		altNoForce = 16000;
 		altFullForce = 2000;
+		altNoForce = 16000;
 
 		airBrake = 1;
 		flaps = 1;
@@ -209,8 +209,8 @@ class CfgVehicles {
 
 		stallSpeed = 220;
 		stallWarningTreshold = 0.12;
-		altNoForce = 16000;
 		altFullForce = 2000;
+		altNoForce = 16000;
 
 		airBrake = 1;
 		flaps = 1;
