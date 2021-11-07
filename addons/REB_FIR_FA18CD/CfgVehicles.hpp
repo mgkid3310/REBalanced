@@ -5,7 +5,7 @@ class CfgVehicles {
 	class FIR_FA18_Base: Plane_Fighter_03_base_F {
 		maxSpeed = 1900;
 		fuelCapacity = 633.3703;
-		acceleration = 200;
+		// acceleration = 200;
 		brakeDistance = 400;
 		landingSpeed = 260;
 		landingAoa = "rad 12.7";
@@ -124,7 +124,7 @@ class CfgVehicles {
 	class FIR_FA18D_Base: Plane_Fighter_03_base_F {
 		maxSpeed = 1900;
 		fuelCapacity = 633.3703;
-		acceleration = 200;
+		// acceleration = 200;
 		brakeDistance = 400;
 		landingSpeed = 260;
 		landingAoa = "rad 12.7";
