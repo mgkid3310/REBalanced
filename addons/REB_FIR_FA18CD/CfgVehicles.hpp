@@ -1,4 +1,4 @@
-class EventHandlers;
+// class EventHandlers;
 
 class CfgVehicles {
 	class Plane_Fighter_03_base_F;
@@ -81,7 +81,7 @@ class CfgVehicles {
 			Fuel_Internal = 1;
 		};
 
-		class EventHandlers: EventHandlers {
+		class EventHandlers {
 			class FIR_FA18C_EH {
 				init = "_this call REB_FIR_FA18CD_fnc_initFA18C";
 			};

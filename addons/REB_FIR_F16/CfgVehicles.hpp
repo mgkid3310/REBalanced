@@ -1,4 +1,4 @@
-class EventHandlers;
+// class EventHandlers;
 
 class CfgVehicles {
 	class Plane_Fighter_03_base_F;
@@ -81,7 +81,7 @@ class CfgVehicles {
 			Fuel_Internal = 1;
 		};
 
-		class EventHandlers: EventHandlers {
+		class EventHandlers {
 			class FIR_F16_EH {
 				init = "_this call REB_FIR_F16_fnc_initF16C";
 			};
@@ -278,7 +278,7 @@ class CfgVehicles {
 			Fuel_Internal = 1;
 		};
 
-		class EventHandlers: EventHandlers {
+		class EventHandlers {
 			class FIR_F16_EH {
 				init = "_this call REB_FIR_F16_fnc_initF16D";
 			};
@@ -338,7 +338,7 @@ class CfgVehicles {
 	class FIR_F16D_CFTTEST: FIR_F16D { // not defined
 		#include "config\F110-GE-129CFT.hpp"
 	};
-	class FIR_F16D_Polish_CFT: FIR_F16D { // Blk 52+
+	class FIR_F16D_Polish_CFT: FIR_F16D_CFTTEST { // Blk 52+
 		#include "config\F100-PW-229CFT.hpp"
 	};
 };
