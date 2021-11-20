@@ -1,0 +1,9 @@
+REB_FIR_F14_fnc_checkEngineAB = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_checkEngineAB.sqf";
+REB_FIR_F14_fnc_eachFrameHandlerF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_eachFrameHandlerF14.sqf";
+REB_FIR_F14_fnc_fueltankJettison = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_fueltankJettison.sqf";
+REB_FIR_F14_fnc_getExternalCapacity = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_getExternalCapacity.sqf";
+REB_FIR_F14_fnc_initExternalFuel = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_initExternalFuel.sqf";
+REB_FIR_F14_fnc_initF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_initF14.sqf";
+REB_FIR_F14_fnc_loadoutFuelF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_loadoutFuelF14.sqf";
+REB_FIR_F14_fnc_loadoutPostF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_loadoutPostF14.sqf";
+REB_FIR_F14_fnc_loadoutPreF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_loadoutPreF14.sqf";
