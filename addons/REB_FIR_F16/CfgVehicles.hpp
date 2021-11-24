@@ -82,7 +82,7 @@ class CfgVehicles {
 
 		class EventHandlers {
 			class FIR_F16_EH {
-				init = "_this call REB_FIR_F16_fnc_initF16C";
+				init = "_this spawn REB_FIR_F16_fnc_initF16C";
 			};
 		};
 
@@ -278,7 +278,7 @@ class CfgVehicles {
 
 		class EventHandlers {
 			class FIR_F16_EH {
-				init = "_this call REB_FIR_F16_fnc_initF16D";
+				init = "_this spawn REB_FIR_F16_fnc_initF16D";
 			};
 		};
 
