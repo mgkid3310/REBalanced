@@ -234,7 +234,7 @@ class CfgVehicles {
 
 	class FIR_F14A_Base: FIR_F14D_Base {
 		maxSpeed = 1850;
-		fuelCapacity = 832.7552;
+		fuelCapacity = 1131.1726;
 		brakeDistance = 400;
 		landingSpeed = 260;
 		landingAoa = "rad 12.7";
