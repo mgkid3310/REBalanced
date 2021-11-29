@@ -29,8 +29,8 @@ class CfgVehicles {
 		rudderInfluence = 0.344;
 
 		airFrictionCoefs0[] = {0, 0, 0};
-		airFrictionCoefs1[] = {0.01, 0.04, 0.004};
-		airFrictionCoefs2[] = {0.001, 0.004, 0.00004};
+		airFrictionCoefs1[] = {0.01, 0.04, 0.0015};
+		airFrictionCoefs2[] = {0.001, 0.004, 0.000015};
 		draconicForceXCoef = 7.0;
 		draconicForceYCoef = 1.1;
 		draconicForceZCoef = 1.0;
@@ -114,6 +114,8 @@ class CfgVehicles {
 
 			maxExternalFuel = "1600 / 7350";
 			externalTank[] = {};
+
+			codeIntercept[] = {"call REB_FIR_F14_fnc_variableWing"};
 		};
 	};
 
@@ -144,8 +146,8 @@ class CfgVehicles {
 		rudderInfluence = 0.344;
 
 		airFrictionCoefs0[] = {0, 0, 0};
-		airFrictionCoefs1[] = {0.01, 0.04, 0.004};
-		airFrictionCoefs2[] = {0.001, 0.004, 0.00004};
+		airFrictionCoefs1[] = {0.01, 0.04, 0.0015};
+		airFrictionCoefs2[] = {0.001, 0.004, 0.000015};
 		draconicForceXCoef = 7.0;
 		draconicForceYCoef = 1.1;
 		draconicForceZCoef = 1.0;
@@ -229,6 +231,8 @@ class CfgVehicles {
 
 			maxExternalFuel = "1600 / 7350";
 			externalTank[] = {};
+
+			codeIntercept[] = {"call REB_FIR_F14_fnc_variableWing"};
 		};
 	};
 
@@ -259,8 +263,8 @@ class CfgVehicles {
 		rudderInfluence = 0.344;
 
 		airFrictionCoefs0[] = {0, 0, 0};
-		airFrictionCoefs1[] = {0.01, 0.04, 0.004};
-		airFrictionCoefs2[] = {0.001, 0.004, 0.00004};
+		airFrictionCoefs1[] = {0.01, 0.04, 0.0015};
+		airFrictionCoefs2[] = {0.001, 0.004, 0.000015};
 		draconicForceXCoef = 7.0;
 		draconicForceYCoef = 1.1;
 		draconicForceZCoef = 1.0;
@@ -344,6 +348,8 @@ class CfgVehicles {
 
 			maxExternalFuel = "1600 / 7350";
 			externalTank[] = {};
+
+			codeIntercept[] = {"call REB_FIR_F14_fnc_variableWing"};
 		};
 	};
 };

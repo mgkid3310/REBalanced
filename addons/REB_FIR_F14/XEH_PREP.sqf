@@ -7,3 +7,4 @@ REB_FIR_F14_fnc_initF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functio
 REB_FIR_F14_fnc_loadoutFuelF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_loadoutFuelF14.sqf";
 REB_FIR_F14_fnc_loadoutPostF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_loadoutPostF14.sqf";
 REB_FIR_F14_fnc_loadoutPreF14 = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_loadoutPreF14.sqf";
+REB_FIR_F14_fnc_variableWing = compile preProcessFileLineNumbers "REB_FIR_F14\functions\fnc_variableWing.sqf";
