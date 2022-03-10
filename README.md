@@ -71,8 +71,9 @@ https://github.com/mgkid3310/REBalanced/issues
 
 You can subscribe addons on Steam Workshop  
 
-FIR F/A-18C/D : https://steamcommunity.com/sharedfiles/filedetails/?id=2602680895  
-FIR F-16 : to be released
+REB F-14 : https://steamcommunity.com/sharedfiles/filedetails/?id=2689134069
+REB F-16 : https://steamcommunity.com/sharedfiles/filedetails/?id=2642150126
+REB F/A-18 : https://steamcommunity.com/sharedfiles/filedetails/?id=2602680895
 
 ----------------
 
@@ -86,7 +87,6 @@ https://discord.gg/jK9FMQjust
 
 **Authors**  
 
-Wg Cdr. Senpai : Team Lead & Management  
 Orbis2358 (mgkid3310@naver.com) : Development Lead  
 &nbsp;
 
