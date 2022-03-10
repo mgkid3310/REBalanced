@@ -71,9 +71,9 @@ https://github.com/mgkid3310/REBalanced/issues
 
 You can subscribe addons on Steam Workshop  
 
-REB F-14 : https://steamcommunity.com/sharedfiles/filedetails/?id=2689134069
-REB F-16 : https://steamcommunity.com/sharedfiles/filedetails/?id=2642150126
-REB F/A-18 : https://steamcommunity.com/sharedfiles/filedetails/?id=2602680895
+REB F-14 : https://steamcommunity.com/sharedfiles/filedetails/?id=2689134069  
+REB F-16 : https://steamcommunity.com/sharedfiles/filedetails/?id=2642150126  
+REB F/A-18 : https://steamcommunity.com/sharedfiles/filedetails/?id=2602680895  
 
 ----------------
 
@@ -92,5 +92,5 @@ Orbis2358 (mgkid3310@naver.com) : Development Lead
 
 **Contributors**  
 
-﻿Viper1Zero : Tester & Title Image  
+Viper1Zero : Tester & Title Image  
 Nexogamer401, Official Toaster : Tester  
