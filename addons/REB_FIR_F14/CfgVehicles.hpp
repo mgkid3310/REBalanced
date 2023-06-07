@@ -70,9 +70,8 @@ class CfgVehicles {
 		#include "CfgMFD_F14D.hpp"
 
 		class AMSData {
-			loadout_pre = "REB_FIR_F14\functions\fnc_loadoutPreF14.sqf";
-			loadout_post = "REB_FIR_F14\functions\fnc_loadoutPostF14.sqf";
-			CustomFuelScript = "REB_FIR_F14\functions\fnc_loadoutFuelF14.sqf";
+			CustomFuelEnabled = 1;
+			CustomFuelScript = "REB_FIR_F14\functions\fnc_customFuelScript.sqf";
 		};
 
 		class JettisonSystem {

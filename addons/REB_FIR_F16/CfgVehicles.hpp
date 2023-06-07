@@ -70,9 +70,8 @@ class CfgVehicles {
 		#include "CfgMFD.hpp"
 
 		class AMSData {
-			loadout_pre = "REB_FIR_F16\functions\fnc_loadoutPreF16C.sqf";
-			loadout_post = "REB_FIR_F16\functions\fnc_loadoutPostF16C.sqf";
-			CustomFuelScript = "REB_FIR_F16\functions\fnc_loadoutFuelF16C.sqf";
+			CustomFuelEnabled = 1;
+			CustomFuelScript = "REB_FIR_F16\functions\fnc_customFuelScript.sqf";
 		};
 
 		class JettisonSystem {
@@ -266,9 +265,8 @@ class CfgVehicles {
 		#include "CfgMFD.hpp"
 
 		class AMSData {
-			loadout_pre = "REB_FIR_F16\functions\fnc_loadoutPreF16D.sqf";
-			loadout_post = "REB_FIR_F16\functions\fnc_loadoutPostF16D.sqf";
-			CustomFuelScript = "REB_FIR_F16\functions\fnc_loadoutFuelF16D.sqf";
+			CustomFuelEnabled = 1;
+			CustomFuelScript = "REB_FIR_F16\functions\fnc_customFuelScript.sqf";
 		};
 
 		class JettisonSystem {
