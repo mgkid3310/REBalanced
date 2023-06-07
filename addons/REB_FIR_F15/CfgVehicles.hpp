@@ -80,7 +80,7 @@ class CfgVehicles {
 		};
 
 		class EventHandlers {
-			class REB_FIR_F15 {
+			class REB_FIR_F15_EH {
 				init = "_this spawn REB_FIR_F15_fnc_initF15";
 			};
 		};
