@@ -115,7 +115,7 @@ class CfgVehicles {
 			externalTank[] = {"FIR_F15C_Fueltank_P_1rnd_M", "1816 / 6103"};
 		};
 	};
-	class FIR_F16C: FIR_F15_Base { // not defined
-		#include "config\F100-PW-229.hpp"
+	class FIR_F15C: FIR_F15_Base {
+		#include "config\F100-PW-220.hpp"
 	};
 };
