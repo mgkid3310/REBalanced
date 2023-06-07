@@ -18,7 +18,6 @@ if !(alive _vehicle) exitWith {
 };
 
 if (_isNowAB isEqualTo _isThrottleAB) exitWith {};
-systemChat format ["%1 %2", _isNowAB, _isThrottleAB];
 
 if (!_isNowAB && _isThrottleAB) exitWith {
 	_vehicle animate ["ABSwitch", 1, true];
