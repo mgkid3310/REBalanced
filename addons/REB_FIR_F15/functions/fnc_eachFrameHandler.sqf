@@ -7,4 +7,4 @@ planes = [];
 
 {
 	[_x] call REB_FIR_F15_eachFrameHandlerF15;
-} forEach planes select {local _x && alive _x};
+} forEach planes select {alive _x};
