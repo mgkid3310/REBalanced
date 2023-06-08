@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 params ["_vehicle"];
 
 private _externalTank = getArray (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "AWESome_ConfigData" >> "externalTank");
