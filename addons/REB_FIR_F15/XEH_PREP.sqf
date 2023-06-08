@@ -1,8 +1,8 @@
 PREP(checkEngineAB);
 PREP(customFuelScript);
 PREP(eachFrameHandler);
-PREP(eachFrameHandlerF15);
+PREP(eachFrameHandlerVehicle);
 PREP(fueltankJettison);
 PREP(getExternalCapacity);
 PREP(initExternalFuel);
-PREP(initF15);
+PREP(initVehicle);
