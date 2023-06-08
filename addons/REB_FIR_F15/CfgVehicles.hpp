@@ -81,7 +81,7 @@ class CfgVehicles {
 
 		class EventHandlers {
 			class REB_FIR_F15_EH {
-				postInit = "_this spawn REB_FIR_F15_fnc_initVehicle";
+				init = "_this spawn REB_FIR_F15_fnc_initVehicle";
 			};
 		};
 
