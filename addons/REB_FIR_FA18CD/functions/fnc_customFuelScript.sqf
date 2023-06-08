@@ -1,2 +1,8 @@
-vehicle player setFuel 1;
-[vehicle player] call REB_FIR_FA18CD_fnc_initExternalFuel;
+#include "script_component.hpp"
+
+private _vehicle = param [0, vehicle player];
+
+if !(local _vehicle) exitWith {};
+
+_vehicle setFuel 1;
+[_vehicle] call FUNC(initExternalFuel);
