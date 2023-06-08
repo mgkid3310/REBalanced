@@ -16,7 +16,7 @@ if (!_isNowAB && _isThrottleAB) exitWith {
 	}:
 
 	if !(_unitInfo isEqualTo "") then {
-		(_unitInfo displayCtrl 9908) ctrlSetText (UIPATH(FA18_Toggles_AfterBurner_ON_ca.paa));
+		(_unitInfo displayCtrl 9908) ctrlSetText (QPATHUI(FA18_Toggles_AfterBurner_ON_ca.paa));
 	};
 };
 
@@ -27,6 +27,6 @@ if (_isNowAB && !_isThrottleAB) exitWith {
 	}:
 
 	if !(_unitInfo isEqualTo "") then {
-		(_unitInfo displayCtrl 9908) ctrlSetText (UIPATH(FA18_Toggles_clear_ca.paa));
+		(_unitInfo displayCtrl 9908) ctrlSetText (QPATHUI(FA18_Toggles_clear_ca.paa));
 	};
 };

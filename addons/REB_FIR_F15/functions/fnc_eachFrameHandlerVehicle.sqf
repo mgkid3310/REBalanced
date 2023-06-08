@@ -19,7 +19,7 @@ private _isHookLowered = _vehicle animationPhase "tailhook" > 0.1;
 private _maxExternalFuel = call compile getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "AWESome_ConfigData" >> "maxExternalFuel");
 
 if !(_unitInfo isEqualTo "") then {
-	(_unitInfo displayCtrl 9907) ctrlSetText format [UIPATH(FA18_Toggles_%1_ca.paa), ["clear", "TailHook_ON"] select _isHookLowered];
+	(_unitInfo displayCtrl 9907) ctrlSetText format [QPATHUI(FA18_Toggles_%1_ca.paa), ["clear", "TailHook_ON"] select _isHookLowered];
 	(_unitInfo displayctrl 9910) progressSetPosition (_vehicle getVariable ["AWESome_fuelEXT", 0] / _maxExternalFuel);
 };
 

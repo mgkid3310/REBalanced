@@ -8,5 +8,5 @@ planes = [];
 } forEach GVAR(classNames);
 
 {
-	[_x] call FUNC(eachFrameHandlerF15);
+	[_x] call FUNC(eachFrameHandlerVehicle);
 } forEach planes select {alive _x};
