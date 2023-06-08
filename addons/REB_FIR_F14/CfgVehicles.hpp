@@ -186,8 +186,7 @@ class CfgVehicles {
 		// #include "CfgMFD_F14A.hpp"
 
 		class AMSData {
-			loadout_pre = "REB_FIR_F14\functions\fnc_loadoutPreF14.sqf";
-			loadout_post = "REB_FIR_F14\functions\fnc_loadoutPostF14.sqf";
+			CustomFuelEnabled = 1;
 			CustomFuelScript = "REB_FIR_F14\functions\fnc_loadoutFuelF14.sqf";
 		};
 
@@ -303,8 +302,7 @@ class CfgVehicles {
 		// #include "CfgMFD_F14A.hpp"
 
 		class AMSData {
-			loadout_pre = "REB_FIR_F14\functions\fnc_loadoutPreF14.sqf";
-			loadout_post = "REB_FIR_F14\functions\fnc_loadoutPostF14.sqf";
+			CustomFuelEnabled = 1;
 			CustomFuelScript = "REB_FIR_F14\functions\fnc_loadoutFuelF14.sqf";
 		};
 

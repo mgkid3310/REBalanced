@@ -81,7 +81,7 @@ class CfgVehicles {
 
 		class EventHandlers: EventHandlers {
 			class REB_FIR_FA18CD_EH {
-				init = "_this spawn REB_FIR_FA18CD_fnc_initFA18CD";
+				init = "_this spawn REB_FIR_FA18CD_fnc_initVehicle";
 			};
 		};
 
@@ -228,7 +228,7 @@ class CfgVehicles {
 
 		class EventHandlers: EventHandlers {
 			class REB_FIR_FA18CD_EH {
-				init = "_this spawn REB_FIR_FA18CD_fnc_initFA18CD";
+				init = "_this spawn REB_FIR_FA18CD_fnc_initVehicle";
 			};
 		};
 
