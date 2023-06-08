@@ -1,1 +1,1 @@
-#include "XEH_PREP.sqf"
+#include "XEH_PREP.hpp"
