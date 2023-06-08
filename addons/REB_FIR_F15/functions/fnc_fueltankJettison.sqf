@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 params ["_vehicle"];
 
 _vehicle setVariable ["REB_externalFuel", 0];
