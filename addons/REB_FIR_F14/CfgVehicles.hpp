@@ -61,7 +61,7 @@ class CfgVehicles {
 		};
 		angleOfIndicence = 0.0523599; // 3deg
 		envelope[] = {0.0, 0.3, 0.8, 1.8, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
-		elevatorCoef[] = {3, 2.94, 1.92, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
+		elevatorCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 		aileronCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 		rudderCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 
@@ -82,15 +82,6 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			class REB_FIR_F14_EH {
 				init = "_this spawn REB_FIR_F14_fnc_initVehicle";
-			};
-		};
-
-		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
 			};
 		};
 
@@ -177,7 +168,7 @@ class CfgVehicles {
 		};
 		angleOfIndicence = 0.0523599; // 3deg
 		envelope[] = {0.0, 0.3, 0.8, 1.8, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
-		elevatorCoef[] = {3, 2.94, 1.92, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
+		elevatorCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 		aileronCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 		rudderCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 
@@ -198,15 +189,6 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			class REB_FIR_F14_EH {
 				init = "_this spawn REB_FIR_F14_fnc_initVehicle";
-			};
-		};
-
-		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
 			};
 		};
 
@@ -293,7 +275,7 @@ class CfgVehicles {
 		};
 		angleOfIndicence = 0.0523599; // 3deg
 		envelope[] = {0.0, 0.3, 0.8, 1.8, 3.0, 4.8, 7.0, 8.6, 9.5, 9.4, 8.9, 8.0, 7.5, 7.3, 7.1, 7.0, 6.9, 6.85, 6.8, 6.8}; // step 118.75km/h
-		elevatorCoef[] = {3, 2.94, 1.92, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
+		elevatorCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 		aileronCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 		rudderCoef[] = {1, 0.98, 0.96, 0.94, 0.92, 0.91, 0.9, 1.02, 2.25, 1.8, 1.45, 1.25, 1.1, 1.05, 1.02, 1, 1, 1, 1, 1};
 
@@ -314,15 +296,6 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			class REB_FIR_F14_EH {
 				init = "_this spawn REB_FIR_F14_fnc_initVehicle";
-			};
-		};
-
-		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
 			};
 		};
 

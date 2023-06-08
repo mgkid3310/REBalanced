@@ -85,15 +85,6 @@ class CfgVehicles {
 			};
 		};
 
-		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
-			};
-		};
-
 		class AWESome_ConfigData {
 			enabled = 1;
 
@@ -193,7 +184,7 @@ class CfgVehicles {
 	class FIR_F16C_CFTTEST: FIR_F16C { // not defined
 		#include "config\F110-GE-129CFT.hpp"
 	};
-	class FIR_F16C_Polish_CFT : FIR_F16C_CFTTEST { // Blk 52+
+	class FIR_F16C_Polish_CFT: FIR_F16C_CFTTEST { // Blk 52+
 		#include "config\F100-PW-229CFT.hpp"
 	};
 
@@ -277,15 +268,6 @@ class CfgVehicles {
 		class EventHandlers {
 			class REB_FIR_F16_EH {
 				init = "_this spawn REB_FIR_F16_fnc_initVehicle";
-			};
-		};
-
-		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
 			};
 		};
 
