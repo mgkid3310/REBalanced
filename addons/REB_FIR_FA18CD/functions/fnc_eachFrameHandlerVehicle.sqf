@@ -20,7 +20,7 @@ private _maxExternalFuel = call compile getText (configFile >> "CfgVehicles" >> 
 
 if !(_unitInfo isEqualTo "") then {
 	(_unitInfo displayCtrl 9907) ctrlSetText format [QPATHUI(FA18_Toggles_%1_ca.paa), ["clear", "TailHook_ON"] select _isHookLowered];
-	(_unitInfo displayctrl 9910) progressSetPosition (_vehicle getVariable ["AWESome_fuelEXT", 0] / _maxExternalFuel);
+	(_unitInfo displayctrl 9910) progressSetPosition ((_vehicle getVariable ["AWESome_fuelEXT", 0]) / _maxExternalFuel);
 };
 
 [_vehicle, _unitInfo] call FUNC(checkEngineAB);

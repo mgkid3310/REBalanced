@@ -1,8 +1,8 @@
-PREP(checkEngineAB);
-PREP(customFuelScript);
-PREP(eachFrameHandler);
-PREP(eachFrameHandlerVehicle);
-PREP(fueltankJettison);
-PREP(getExternalCapacity);
-PREP(initExternalFuel);
-PREP(initVehicle);
+REB_FIR_FA18CD_fnc_checkEngineAB = compile preprocessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_checkEngineAB.sqf';
+REB_FIR_FA18CD_fnc_customFuelScript = compile preprocessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_customFuelScript.sqf';
+REB_FIR_FA18CD_fnc_eachFrameHandler = compile preProcessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_eachFrameHandler.sqf';
+REB_FIR_FA18CD_fnc_eachFrameHandlerVehicle = compile preProcessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_eachFrameHandlerVehicle.sqf';
+REB_FIR_FA18CD_fnc_fueltankJettison = compile preprocessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_fueltankJettison.sqf';
+REB_FIR_FA18CD_fnc_getExternalCapacity = compile preprocessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_getExternalCapacity.sqf';
+REB_FIR_FA18CD_fnc_initExternalFuel = compile preprocessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_initExternalFuel.sqf';
+REB_FIR_FA18CD_fnc_initVehicle = compile preprocessFileLineNumbers 'REB_FIR_FA18CD\functions\fnc_initVehicle.sqf';
