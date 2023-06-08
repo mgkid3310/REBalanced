@@ -86,12 +86,6 @@ class CfgVehicles {
 		};
 
 		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
-			};
 			class ECM_ON {
 				shortcut = "User2";
 			};
@@ -233,12 +227,6 @@ class CfgVehicles {
 		};
 
 		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
-			};
 			class ECM_ON {
 				shortcut = "User2";
 			};

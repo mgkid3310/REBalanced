@@ -2,7 +2,7 @@
 
 class CfgVehicles {
 	class Plane_Fighter_03_base_F;
-	class FIR_F15_Base : Plane_Fighter_03_base_F {
+	class FIR_F15_Base: Plane_Fighter_03_base_F {
 		maxSpeed = 1850;
 		fuelCapacity = 746.3080;
 		brakeDistance = 400;
@@ -82,15 +82,6 @@ class CfgVehicles {
 		class EventHandlers {
 			class REB_FIR_F15_EH {
 				init = "_this spawn REB_FIR_F15_fnc_initVehicle";
-			};
-		};
-
-		class UserActions {
-			class Afterburner {
-				condition = "false";
-			};
-			class Afterburner_1 {
-				condition = "false";
 			};
 		};
 
