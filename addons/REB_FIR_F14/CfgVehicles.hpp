@@ -102,7 +102,7 @@ class CfgVehicles {
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = "1600 / 7350";
+			maxExternalFuel = 1600;
 			externalTank[] = {};
 
 			codeIntercept[] = {"call REB_FIR_F14_fnc_variableWing"};
@@ -209,7 +209,7 @@ class CfgVehicles {
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = "1600 / 7350";
+			maxExternalFuel = 1600;
 			externalTank[] = {};
 
 			codeIntercept[] = {"call REB_FIR_F14_fnc_variableWing"};
@@ -316,7 +316,7 @@ class CfgVehicles {
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = "1600 / 7350";
+			maxExternalFuel = 1600;
 			externalTank[] = {};
 
 			codeIntercept[] = {"call REB_FIR_F14_fnc_variableWing"};
