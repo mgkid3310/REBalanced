@@ -46,9 +46,10 @@
 			CustomFuelScript = "REB_FIR_F15\functions\fnc_customFuelScript.sqf";
 		};
 
-		class JettisonSystem {
-			JettisonScript = "REB_FIR_F15\functions\fnc_fueltankJettison.sqf";
-			Fuel_Internal = 1;
+		class UserActions {
+			class Fueltank_Jettison {
+				statement = "[this] spawn REB_FIR_F15_fnc_fueltankJettison";
+			};
 		};
 
 		class EventHandlers {
