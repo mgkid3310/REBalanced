@@ -2,6 +2,8 @@
 
 params ["_vehicle"];
 
-_vehicle setVariable ["REB_externalFuel", 0];
+private _fuelInternal = fuel _vehicle;
+private _handle = [_vehicle] execVM "FIR_F14\sqs\Jettison\droptanks.sqf";
 
-[_vehicle] execVM "FIR_F15\sqs\Jettison\droptanks.sqf";
+waitUntil {scriptDone _handle};
+_vehicle setFuel _fuelInternal;
