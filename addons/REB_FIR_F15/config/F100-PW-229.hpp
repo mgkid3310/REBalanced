@@ -39,6 +39,6 @@
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = "5448 / 10591";
-			externalTank[] = {"FIR_F15C_Fueltank_P_1rnd_M", "1816 / 10591"};
+			maxExternalFuel = 5448;
+			externalTank[] = {"FIR_F15C_Fueltank_P_1rnd_M", 1816};
 		};
