@@ -39,7 +39,7 @@
 
 		unitInfoType = "Rsc_REB_F15_UnitInfo";
 
-		#include "CfgMFD.hpp"
+		#include "..\CfgMFD.hpp"
 
 		class AMSData {
 			CustomFuelEnabled = 1;
