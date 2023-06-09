@@ -102,8 +102,8 @@ class CfgVehicles {
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = "3150 / 3200";
-			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", "1120 / 3200", "FIR_F16C_center_Fueltank_P_1rnd_M", "910 / 3200"};
+			maxExternalFuel = 3150;
+			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", 1120, "FIR_F16C_center_Fueltank_P_1rnd_M", 910};
 		};
 	};
 	class FIR_F16C: FIR_F16_Base { // not defined
@@ -288,8 +288,8 @@ class CfgVehicles {
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = "3150 / 3200";
-			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", "1120 / 3200", "FIR_F16C_center_Fueltank_P_1rnd_M", "910 / 3200"};
+			maxExternalFuel = 3150;
+			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", 1120, "FIR_F16C_center_Fueltank_P_1rnd_M", 910};
 		};
 	};
 	class FIR_F16D: FIR_F16D_Base { // not defined
