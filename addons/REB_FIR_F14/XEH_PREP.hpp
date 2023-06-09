@@ -1,9 +1,9 @@
-REB_FIR_F14_fnc_checkEngineAB = compile preprocessFileLineNumbers 'REB_FIR_F14\functions\fnc_checkEngineAB.sqf';
-REB_FIR_F14_fnc_customFuelScript = compile preprocessFileLineNumbers 'REB_FIR_F14\functions\fnc_customFuelScript.sqf';
-REB_FIR_F14_fnc_eachFrameHandler = compile preProcessFileLineNumbers 'REB_FIR_F14\functions\fnc_eachFrameHandler.sqf';
-REB_FIR_F14_fnc_eachFrameHandlerVehicle = compile preProcessFileLineNumbers 'REB_FIR_F14\functions\fnc_eachFrameHandlerVehicle.sqf';
-REB_FIR_F14_fnc_fueltankJettison = compile preprocessFileLineNumbers 'REB_FIR_F14\functions\fnc_fueltankJettison.sqf';
-REB_FIR_F14_fnc_getExternalCapacity = compile preprocessFileLineNumbers 'REB_FIR_F14\functions\fnc_getExternalCapacity.sqf';
-REB_FIR_F14_fnc_initExternalFuel = compile preprocessFileLineNumbers 'REB_FIR_F14\functions\fnc_initExternalFuel.sqf';
-REB_FIR_F14_fnc_initVehicle = compile preprocessFileLineNumbers 'REB_FIR_F14\functions\fnc_initVehicle.sqf';
-REB_FIR_F14_fnc_variableWing = compile preprocessFileLineNumbers 'REB_FIR_F14\functions\fnc_variableWing.sqf';
+PREP(checkEngineAB);
+PREP(customFuelScript);
+PREP(eachFrameHandler);
+PREP(eachFrameHandlerVehicle);
+PREP(fueltankJettison);
+PREP(getExternalCapacity);
+PREP(initExternalFuel);
+PREP(initVehicle);
+PREP(variableWing);
