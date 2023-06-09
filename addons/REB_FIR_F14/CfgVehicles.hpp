@@ -74,9 +74,10 @@ class CfgVehicles {
 			CustomFuelScript = "REB_FIR_F14\functions\fnc_customFuelScript.sqf";
 		};
 
-		class JettisonSystem {
-			JettisonScript = "REB_FIR_F14\functions\fnc_fueltankJettison.sqf";
-			Fuel_Internal = 1;
+		class UserActions {
+			class Fueltank_Jettison {
+				statement = "[this] spawn REB_FIR_F14_fnc_fueltankJettison";
+			};
 		};
 
 		class EventHandlers: EventHandlers {
@@ -181,9 +182,10 @@ class CfgVehicles {
 			CustomFuelScript = "REB_FIR_F14\functions\fnc_loadoutFuelF14.sqf";
 		};
 
-		class JettisonSystem {
-			JettisonScript = "REB_FIR_F14\functions\fnc_fueltankJettison.sqf";
-			Fuel_Internal = 1;
+		class UserActions {
+			class Fueltank_Jettison {
+				statement = "[this] spawn REB_FIR_F14_fnc_fueltankJettison";
+			};
 		};
 
 		class EventHandlers: EventHandlers {
@@ -288,9 +290,10 @@ class CfgVehicles {
 			CustomFuelScript = "REB_FIR_F14\functions\fnc_loadoutFuelF14.sqf";
 		};
 
-		class JettisonSystem {
-			JettisonScript = "REB_FIR_F14\functions\fnc_fueltankJettison.sqf";
-			Fuel_Internal = 1;
+		class UserActions {
+			class Fueltank_Jettison {
+				statement = "[this] spawn REB_FIR_F14_fnc_fueltankJettison";
+			};
 		};
 
 		class EventHandlers: EventHandlers {
