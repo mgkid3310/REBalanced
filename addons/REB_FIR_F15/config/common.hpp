@@ -18,8 +18,8 @@
 		aileronControlsSensitivityCoef = 4.0;
 		rudderControlsSensitivityCoef = 2.0;
 		wheelSteeringSensitivity = 1.4;
-		elevatorSensitivity = 0.540;
-		aileronSensitivity = 0.980;
+		elevatorSensitivity = 0.520;
+		aileronSensitivity = 0.800;
 		rudderInfluence = 0.344;
 
 		airFrictionCoefs0[] = {0, 0, 0};
