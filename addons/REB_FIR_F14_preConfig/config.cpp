@@ -3,7 +3,7 @@ class CfgPatches {
 		name = "REBalanced FIR F-14 PreConfig";
 		author = "Orbis2358";
 		requiredVersion = 2.04;
-		requiredAddons[] = {"orbis_aerodynamics", "FIR_F14D_F"};
+		requiredAddons[] = {"FIR_F14D_F"};
 		units[] = {};
 		weapons[] = {};
 	};
