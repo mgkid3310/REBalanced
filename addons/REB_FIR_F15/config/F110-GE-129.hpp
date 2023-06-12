@@ -23,6 +23,9 @@
 		};
 
 		class AWESome_ConfigData {
+			enabled = 1;
+
+			abThrottle = 0.9;
 			refThrust = 124.6; //kN
 			milThrust = 75.6; //kN
 			abThrust = 124.6; //kN
