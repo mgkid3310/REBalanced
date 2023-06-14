@@ -39,6 +39,8 @@
 
 		unitInfoType = "Rsc_REB_F14_UnitInfo";
 
+		// #include "..\CfgMFD_F14D.hpp"
+
 		class AMSData {
 			CustomFuelEnabled = 1;
 			CustomFuelScript = "REB_FIR_F14\functions\fnc_customFuelScript.sqf";
