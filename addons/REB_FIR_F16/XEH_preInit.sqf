@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-#include "XEH_PREP.hpp"
+#include "XEH_PREP.sqf"
 
 REB_Common_fnc_runUserAction = {
 	private _action = param [0, ""];
