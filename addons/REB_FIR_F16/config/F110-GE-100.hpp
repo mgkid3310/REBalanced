@@ -22,9 +22,23 @@
 			0
 		};
 
-		class AWESome_ConfigData: AWESome_ConfigData {
-			refThrust = 124.6; //kN
-			milThrust = 73.8; //kN
-			abThrust = 124.6; //kN
+		class AWESome_ConfigData {
+			enabled = 1;
+
+			abThrottle = 0.9;
+			refThrust = 124.6; // kN per Engine
+			milThrust = 73.8; // kN per Engine
+			abThrust = 124.6; // kN per Engine
 			abFuelMultiplier = 4.4625;
+
+			grossWeight = 12020;
+			zfWeight = 8573;
+			fuelWeight = 3200;
+
+			useExternalFuel = 1; // draw fuel from external tank to internal tank via AWESome
+			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
+			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
+
+			maxExternalFuel = 3150;
+			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", 1120, "FIR_F16C_center_Fueltank_P_1rnd_M", 910};
 		};

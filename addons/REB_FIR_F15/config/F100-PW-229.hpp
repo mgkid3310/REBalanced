@@ -26,9 +26,9 @@
 			enabled = 1;
 
 			abThrottle = 0.9;
-			refThrust = 129.4; //kN per engine
-			milThrust = 79.2; //kN per engine
-			abThrust = 129.4; //kN per engine
+			refThrust = 129.4; // kN per Engine
+			milThrust = 79.2; // kN per Engine
+			abThrust = 129.4; // kN per Engine
 			abFuelMultiplier = 4.6388;
 
 			grossWeight = 23000;
