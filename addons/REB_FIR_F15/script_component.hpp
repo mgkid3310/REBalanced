@@ -10,4 +10,4 @@
 #define GVAR(var1) DOUBLES(ADDON,var1)
 #define QGVAR(var1) QUOTE(GVAR(var1))
 #define FUNC(var1) TRIPLES(ADDON,fnc,var1)
-#define PREP(var1) FUNC(var1) = compile preProcessFileLineNumbers QPATH(functions\DOUBLES(fnc,var1).sqf)
+#define PREP(var1) FUNC(var1) = compileFinal preProcessFileLineNumbers QPATH(functions\DOUBLES(fnc,var1).sqf)
