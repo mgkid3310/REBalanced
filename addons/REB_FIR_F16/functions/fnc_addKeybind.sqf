@@ -3,8 +3,6 @@
 private _action = param [0, ""];
 private _name = param [1, ""];
 
-if !(isClass (configFile >> "CfgVehicles" >> (typeOf vehicle player) >> "UserActions" >> _action)) exitWith {};
-
 if (_name isEqualType "") then {
 	_name = [_name, _name];
 };
