@@ -5,3 +5,5 @@ releases/
 *.bisign
 *.exe
 *.pbo
+
+release.bat
