@@ -6,4 +6,4 @@ releases/
 *.exe
 *.pbo
 
-release.bat
+publish.bat
