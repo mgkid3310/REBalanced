@@ -15,7 +15,7 @@ if (!_isNowAB && _isThrottleAB) exitWith {
 		[_vehicle] execVM getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "ABSystem" >> "ab_start_script");
 	};
 
-	if !(_unitInfo isEqualTo "") then {
+	if (!(_unitInfo isEqualTo "") and (vehicle player isEqualTo _vehicle)) then {
 		(_unitInfo displayCtrl 9908) ctrlSetText (QPATHUI(FA18_Toggles_AfterBurner_ON_ca.paa));
 	};
 };
@@ -26,7 +26,7 @@ if (_isNowAB && !_isThrottleAB) exitWith {
 		[_vehicle] execVM getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "ABSystem" >> "ab_end_script");
 	};
 
-	if !(_unitInfo isEqualTo "") then {
+	if (!(_unitInfo isEqualTo "") and (vehicle player isEqualTo _vehicle)) then {
 		(_unitInfo displayCtrl 9908) ctrlSetText (QPATHUI(FA18_Toggles_clear_ca.paa));
 	};
 };
