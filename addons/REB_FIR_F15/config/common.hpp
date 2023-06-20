@@ -24,7 +24,7 @@
 
 		airFrictionCoefs0[] = {0, 0, 0};
 		airFrictionCoefs1[] = {0, 0, 0};
-		airFrictionCoefs2[] = {0.001, 0.004, 0.00004};
+		airFrictionCoefs2[] = {0.001, 0.002, 0.00001};
 		draconicForceXCoef = 7.0;
 		draconicForceYCoef = 1.1;
 		draconicForceZCoef = 1.0;
