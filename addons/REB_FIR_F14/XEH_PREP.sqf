@@ -8,5 +8,5 @@ PREP(initExternalFuel);
 PREP(initVehicle);
 PREP(variableWing);
 
-CPREP(runUserAction);
 CPREP(addKeybind);
+CPREP(runUserAction);

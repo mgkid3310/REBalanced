@@ -7,5 +7,5 @@ PREP(getExternalCapacity);
 PREP(initExternalFuel);
 PREP(initVehicle);
 
-CPREP(runUserAction);
 CPREP(addKeybind);
+CPREP(runUserAction);

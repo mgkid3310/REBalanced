@@ -13,7 +13,6 @@ if (local _vehicle) then {
 };
 
 private _unitInfo = uiNamespace getVariable ["HUD", ""];
-private _isHookLowered = _vehicle animationPhase "tailhook" > 0.1;
 private _internalFuel = getNumber (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "AWESome_ConfigData" >> "fuelWeight");
 private _maxExternalFuel = getNumber (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "AWESome_ConfigData" >> "maxExternalFuel");
 private _maxExternalRatio = _maxExternalFuel / _internalFuel;
@@ -21,7 +20,6 @@ private _maxExternalRatio = _maxExternalFuel / _internalFuel;
 private _isNowAB = [_vehicle, _unitInfo] call FUNC(checkEngineAB);
 
 if (!(_unitInfo isEqualTo "") and (vehicle player isEqualTo _vehicle)) then {
-	(_unitInfo displayCtrl 9907) ctrlSetText format [QPATHUI(FA18_Toggles_%1_ca.paa), ["clear", "TailHook_ON"] select _isHookLowered];
 	(_unitInfo displayCtrl 9908) ctrlSetText format [QPATHUI(FA18_Toggles_%1_ca.paa), ["clear", "AfterBurner_ON"] select _isNowAB];
 	(_unitInfo displayctrl 9910) progressSetPosition ((_vehicle getVariable ["AWESome_fuelEXT", 0])/ _maxExternalRatio);
 };
