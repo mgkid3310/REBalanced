@@ -19,7 +19,7 @@ if (_isPushingThrottle) then {
 	_vehicle setVariable [QGVAR(overDetent), -1];
 };
 
-if (_vehicle getVariable [QGVAR(overDetent), -1] == 0) then {
+if ((player isEqualTo driver _vehicle) and (_vehicle getVariable [QGVAR(overDetent), -1] == 0)) then {
 	_vehicle setAirplaneThrottle (_abThrottle min _currentThrottle);
 };
 
