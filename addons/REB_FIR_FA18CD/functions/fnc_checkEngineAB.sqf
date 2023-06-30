@@ -3,10 +3,27 @@
 params ["_vehicle", "_unitInfo"];
 
 private _isNowAB = (_vehicle getVariable ["AWS_AB", "off"]) == "on";
-private _abThrottle = getNumber (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "AWESome_ConfigData" >> "abThrottle");
-private _isThrottleAB = (airplaneThrottle _vehicle > _abThrottle) && (isEngineOn _vehicle);
 
 if !(local _vehicle) exitWith {_isNowAB};
+
+private _abThrottle = getNumber (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "AWESome_ConfigData" >> "abThrottle");
+private _currentThrottle = airplaneThrottle _vehicle;
+private _isPushingThrottle = inputAction "HeliUp" > 0;
+
+if (_isPushingThrottle) then {
+	if (_vehicle getVariable [QGVAR(overDetent), -1] < 0) then {
+		_vehicle setVariable [QGVAR(overDetent), [0, 1] select (_currentThrottle > _abThrottle)];
+	};
+} else {
+	_vehicle setVariable [QGVAR(overDetent), -1];
+};
+
+if (_vehicle getVariable [QGVAR(overDetent), -1] == 0) then {
+	_vehicle setAirplaneThrottle (_abThrottle min _currentThrottle);
+};
+
+private _isThrottleAB = (airplaneThrottle _vehicle > _abThrottle) && (isEngineOn _vehicle);
+
 if (_isNowAB isEqualTo _isThrottleAB) exitWith {_isNowAB};
 
 if (_isThrottleAB) then {

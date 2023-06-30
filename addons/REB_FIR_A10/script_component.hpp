@@ -9,10 +9,12 @@
 #define QPATHUI(var1) QUOTE(ADDON\ui\var1)
 
 #define GVAR(var1) DOUBLES(ADDON,var1)
+#define CGVAR(var1) DOUBLES(COMMON,var1)
 #define FUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define CFUNC(var1) TRIPLES(COMMON,fnc,var1)
 
 #define QGVAR(var1) QUOTE(GVAR(var1))
+#define QCGVAR(var1) QUOTE(CGVAR(var1))
 #define QFUNC(var1) QUOTE(FUNC(var1)
 #define QCFUNC(var1) QUOTE(CFUNC(var1))
 
