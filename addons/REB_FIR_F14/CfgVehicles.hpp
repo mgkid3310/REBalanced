@@ -13,6 +13,6 @@ class CfgVehicles {
 	};
 
 	class FIR_F14A_Base: FIR_F14D_Base {
-		#include "config\TF30-P-414.hpp"
+		#include "config\TF30-PW-414.hpp"
 	};
 };
