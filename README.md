@@ -71,6 +71,7 @@ https://github.com/mgkid3310/REBalanced/issues
 
 You can subscribe addons on Steam Workshop  
 
+REB FIR AV-8B : https://steamcommunity.com/sharedfiles/filedetails/?id=3002727186 (Open Beta)
 REB FIR F-14 : https://steamcommunity.com/sharedfiles/filedetails/?id=2689134069  
 REB FIR F-15 : https://steamcommunity.com/sharedfiles/filedetails/?id=2986888327  
 REB FIR F-16 : https://steamcommunity.com/sharedfiles/filedetails/?id=2642150126  
