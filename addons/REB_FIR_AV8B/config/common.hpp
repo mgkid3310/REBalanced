@@ -1,6 +1,7 @@
 		maxSpeed = 1000;
 		landingAoa = 0.139626; // 8 deg
 		landingSpeed = 260;
+		vtol = 1;
 
 		stallSpeed = 220;
 		stallWarningTreshold = 0.12;
