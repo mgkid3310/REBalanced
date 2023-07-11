@@ -23,8 +23,8 @@
 		rudderInfluence = 0.240;
 
 		airFrictionCoefs0[] = {0, 0, 0};
-		airFrictionCoefs1[] = {0.01, 0.04, 0.008};
-		airFrictionCoefs2[] = {0.001, 0.004, 0.00001};
+		airFrictionCoefs1[] = {0.01, 0.04, 0.012};
+		airFrictionCoefs2[] = {0.001, 0.004, 0.000015};
 		draconicForceXCoef = 7.0;
 		draconicForceYCoef = 1.1;
 		draconicForceZCoef = 1.0;
