@@ -8,8 +8,8 @@ vehicle_dict = {
 }
 
 engine_dict = {
-    'F-15E': {
-        'F100-PW-220': 'F100-PW-220_E'
+	'F-15E': {
+		'F100-PW-220': 'F100-PW-220_E'
 	}
 }
 
@@ -77,7 +77,7 @@ while get_vehicle(row, col) != '':
 		vehicle = get_vehicle(row, col)
 		engine = get_engine(row, col)
 		thrustCoef = get_thrustCoef(row, col)
-		
+
 		if vehicle in engine_dict:
 			if engine in engine_dict[vehicle]:
 				engine = engine_dict[vehicle][engine]
@@ -104,7 +104,7 @@ for dir in os.listdir('addons/'):
 
 		target = [d for d in data if d['addon'] == dir]
 		config_engine = find_match(engine, [d['engine'] for d in target])
-		
+
 		if config_engine == '':
 			print(f'no match for {engine}')
 			continue
