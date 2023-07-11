@@ -37,6 +37,8 @@
 		elevatorCoef[] = {1, 1.55, 1.7, 1.65, 1.55, 1.4, 1.2, 1, 0.8, 0.65, 0.55};
 		rudderCoef[] = {1, 1.55, 1.7, 1.65, 1.55, 1.4, 1.2, 1, 0.8, 0.65, 0.55};
 
+		unitInfoType = "Rsc_REB_AV8B_UnitInfo";
+
 		#include "..\CfgMFD.hpp"
 
 		class AMSData {
