@@ -1,5 +1,7 @@
 releases/
 
+~*
+
 *.bikey
 *.biprivatekey
 *.bisign
