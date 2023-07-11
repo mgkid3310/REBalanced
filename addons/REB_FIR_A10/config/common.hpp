@@ -37,3 +37,19 @@
 		rudderCoef[] = {1, 1.55, 1.7, 1.65, 1.55, 1.4, 1.2, 1, 0.8, 0.65, 0.55};
 
 		#include "..\CfgMFD.hpp"
+
+		// maxOmega = 20000;
+		/* class Wheels {
+			class Wheel_1 {
+				// mass = 1;
+				// MOI = 1;
+				dampingRate = 0;
+				// dampingRateDamaged = 0.1;
+				// dampingRateDestroyed = 0.1;
+				maxBrakeTorque = 0;
+				// maxHandBrakeTorque = 0;
+				longitudinalStiffnessPerUnitGravity = 0;
+			};
+			class Wheel_2: Wheel_1 {};
+			class Wheel_3: Wheel_2 {};
+		}; */
