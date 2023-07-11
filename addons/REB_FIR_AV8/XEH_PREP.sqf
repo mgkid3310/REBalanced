@@ -1,2 +1,0 @@
-CPREP(addKeybind);
-CPREP(runUserAction);
