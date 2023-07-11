@@ -96,28 +96,4 @@ class MFD {
 			};
 		};
 	};
-	class HMCS_ALL {
-		class Draw {
-			class SpeedNumber {
-				sourceScale = 1.94384;
-			};
-			class MachText_Dot {
-				text = "";
-			};
-			class MachNumber {
-				sourceScale = 0.002915;
-				sourceLength = 1;
-				sourcePrecision = 2;
-				pos[] = {{0.09, 0.48}, 1};
-				right[] = {{0.12, 0.48}, 1};
-				down[] = {{0.09, 0.51}, 1};
-			};
-			class AltNumber: SpeedNumber {
-				sourceScale = 3.28;
-			};
-			class RadarAltitude_Number {
-				sourceScale = 3.28;
-			};
-		};
-	};
 };
