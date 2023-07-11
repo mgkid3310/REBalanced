@@ -10,4 +10,5 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgResources.hpp"
 #include "CfgVehicles.hpp"
