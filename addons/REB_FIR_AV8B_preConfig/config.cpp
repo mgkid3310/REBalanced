@@ -1,9 +1,9 @@
 class CfgPatches {
-	class REB_FIR_AV8_preConfig {
-		name = "REBalanced FIR AV-8 PreConfig";
+	class REB_FIR_AV8B_preConfig {
+		name = "REBalanced FIR AV-8B PreConfig";
 		author = "Orbis2358";
 		requiredVersion = 2.04;
-		requiredAddons[] = {"FIR_AV8"};
+		requiredAddons[] = {"FIR_AV8B_F"};
 		units[] = {};
 		weapons[] = {};
 	};

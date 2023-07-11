@@ -1,5 +1,9 @@
 #include "script_component.hpp"
 
+GVAR(classNames) = ["FIR_AV8B_Base", "FIR_AV8B_NA_Base", "FIR_AV8B_GR7_Base"];
+
+addMissionEventHandler ["EachFrame", {[] call FUNC(eachFrameHandler)}];
+
 ["AMSOpen", ["Open AMS", "Open AMS"]] call CFUNC(addKeybind);
 ["Aircraft_MFD_Open_N", ["Open I-TGT", "Open I-TGT"]] call CFUNC(addKeybind);
 ["HMD_ON", ["HMD ON", "HMD ON"]] call CFUNC(addKeybind);

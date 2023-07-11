@@ -1,4 +1,4 @@
-#define ADDON REB_FIR_AV8
+#define ADDON REB_FIR_AV8B
 #define COMMON REB_Common
 
 #define DOUBLES(var1,var2) var1##_##var2
