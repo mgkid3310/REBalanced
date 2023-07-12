@@ -13,7 +13,7 @@ engine_dict = {
 	}
 }
 
-def rightpad(string: str, length = 18, char = '0') -> str:
+def rightpad(string: str, length: int = 18, char: str = '0') -> str:
 	string += max(length - len(string), 0) * char
 
 	if float(string) == 0:
@@ -62,7 +62,7 @@ def get_engine(row: int, col: int) -> str:
 def get_thrust(row: int, col: int, idx: int) -> str:
 	return get_value(row * 30 + idx + 7, col * 5 + 1)
 
-def get_thrustCoef(row: int, col: int) -> list:
+def get_thrustCoef(row: int, col: int) -> list[str]:
 	profile, idx = [], 0
 	while get_thrust(row, col, idx) != '':
 		profile.append(rightpad(get_thrust(row, col, idx)))
