@@ -63,15 +63,17 @@ def get_thrust(row: int, col: int, idx: int) -> str:
 	return get_value(row * 30 + idx + 7, col * 5 + 1)
 
 def get_thrustCoef(row: int, col: int) -> list[str]:
-	profile, idx = [], 0
+	profile: list[str] = []
+	idx: int = 0
 	while get_thrust(row, col, idx) != '':
 		profile.append(rightpad(get_thrust(row, col, idx)))
 		idx += 1
 
 	return profile
 
-data = []
-row, col = 0, 0
+data: list[dict] = []
+row: int = 0
+col: int = 0
 while get_vehicle(row, col) != '':
 	while get_vehicle(row, col) != '':
 		vehicle = get_vehicle(row, col)
