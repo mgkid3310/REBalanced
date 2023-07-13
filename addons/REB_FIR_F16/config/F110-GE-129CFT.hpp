@@ -1,4 +1,4 @@
-		fuelCapacity = 943.1;
+		fuelCapacity = 947.2;
 		thrustCoef[] = {
 			1.5787786715262282,
 			1.5223279639250090,
@@ -34,12 +34,12 @@
 
 			grossWeight = 12020;
 			zfWeight = 8573;
-			fuelWeight = 4560;
+			fuelWeight = 4580;
 
 			useExternalFuel = 1; // draw fuel from external tank to internal tank via AWESome
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = 3150;
-			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", 1120, "FIR_F16C_center_Fueltank_P_1rnd_M", 910};
+			maxExternalFuel = 3190;
+			externalTank[] = {"FIR_F16C_Fueltank_P_1rnd_M", 1135, "FIR_F16C_center_Fueltank_P_1rnd_M", 920};
 		};

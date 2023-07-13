@@ -40,7 +40,7 @@
 			getExternalFuel = "(_this select 0) getVariable ['AWESome_fuelEXT', 0]";
 			setExternalFuel = "(_this select 0) setVariable ['AWESome_fuelEXT', (_this select 1), true]";
 
-			maxExternalFuel = 1600;
+			maxExternalFuel = 1638;
 			externalTank[] = {};
 
 			codeIntercept[] = {"call REB_FIR_F14_fnc_variableWing"};
