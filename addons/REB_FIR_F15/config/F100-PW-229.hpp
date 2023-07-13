@@ -1,4 +1,4 @@
-		fuelCapacity = 1073.2677;
+		fuelCapacity = 1073;
 		thrustCoef[] = {
 			1.6558571552737240,
 			1.5966504344156442,
@@ -28,9 +28,9 @@
 
 			abThrottle = 0.9;
 			refThrust = 129.4; // kN per Engine
-			milThrust = 79.2; // kN per Engine
+			milThrust = 79.18; // kN per Engine
 			abThrust = 129.4; // kN per Engine
-			abFuelMultiplier = 4.6388;
+			abFuelMultiplier = 4.639;
 
 			grossWeight = 23000;
 			zfWeight = 14379;

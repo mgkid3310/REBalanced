@@ -1,4 +1,4 @@
-		fuelCapacity = 633.3703;
+		fuelCapacity = 633.4;
 		thrustCoef[] = {
 			1.3814138876205933,
 			1.3320201424093363,
@@ -27,13 +27,13 @@
 			enabled = 1;
 
 			abThrottle = 0.9;
-			refThrust = 78.7; // kN per Engine
-			milThrust = 53.2; // kN per Engine
-			abThrust = 78.7; // kN per Engine
-			abFuelMultiplier = 3.0214;
+			refThrust = 78.73; // kN per Engine
+			milThrust = 53.16; // kN per Engine
+			abThrust = 78.73; // kN per Engine
+			abFuelMultiplier = 3.021;
 
 			grossWeight = 16769;
-			zfWeight = 10443;
+			zfWeight = 10433;
 			fuelWeight = 4930;
 
 			useExternalFuel = 1; // draw fuel from external tank to internal tank via AWESome
