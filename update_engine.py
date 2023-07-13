@@ -1,17 +1,31 @@
 import os, re, openpyxl
 
 engine_profile = openpyxl.load_workbook('REB Engine Profile.xlsx', data_only = True)
-thrust_data = engine_profile['Thrust']
+vehicle_sheet = engine_profile['IRL']
+thrust_sheet = engine_profile['Thrust']
 
-vehicle_dict = {
+vehicle_conv = {
 	'GR.7A/9A': 'AV8B'
 }
 
-engine_dict = {
+engine_conv = {
 	'F-15E': {
 		'F100-PW-220': 'F100-PW-220_E'
 	}
 }
+
+config_dict = {
+	'zfWeight': 'zfw',
+	'fuelWeight': 'fuel',
+	'grossWeight': 'gw',
+	'refThrust': 'abThrust',
+	'milThrust': 'milThrust',
+	'abThrust': 'abThrust',
+	'fuelCapacity': 'fuelCap',
+	'abFuelMultiplier': 'ffRatio'
+}
+
+fuelCFT = 1360
 
 def rightpad(string: str, length: int = 18, char: str = '0') -> str:
 	string += max(length - len(string), 0) * char
@@ -20,6 +34,33 @@ def rightpad(string: str, length: int = 18, char: str = '0') -> str:
 		return '0'
 
 	return string[:length]
+
+def effNum(number, count: int = 4) -> str:
+	if number is None:
+		return '0'
+
+	if number == 0:
+		return '0'
+
+	text, num = '', 0
+	for idx, char in enumerate(str(number)):
+		if char == '.':
+			text += char
+		elif char == '0' and text == '':
+			text += char
+		elif count > num:
+			text += char
+			num += 1
+
+		if count == num:
+			if str(number)[idx + 1].isdigit():
+				if int(str(number)[idx + 1]) >= 5:
+					list_text = list(text)
+					list_text[-1] = str(int(text[-1]) + 1)
+					text = ''.join(list_text)
+			break
+
+	return text
 
 def find_match(item: str, target: list[str]) -> str:
 	if item in target:
@@ -34,8 +75,8 @@ def find_match(item: str, target: list[str]) -> str:
 	return ''
 
 def vehicle2addon(vehicle: str) -> str:
-	if vehicle in vehicle_dict:
-		vehicle = vehicle_dict[vehicle]
+	if vehicle in vehicle_conv:
+		vehicle = vehicle_conv[vehicle]
 
 	vehicle = vehicle.upper()
 	vehicle = vehicle.replace('-', '').replace('/', '')
@@ -45,13 +86,13 @@ def vehicle2addon(vehicle: str) -> str:
 	return f'REB_FIR_{find_match(vehicle, addons)}'
 
 def get_value(row: int, col: int) -> str:
-	if not col < len(thrust_data[row]):
+	if not col < len(thrust_sheet[row]):
 		return ''
 
-	if thrust_data[row][col].value is None:
+	if thrust_sheet[row][col].value is None:
 		return ''
 
-	return str(thrust_data[row][col].value)
+	return str(thrust_sheet[row][col].value)
 
 def get_vehicle(row: int, col: int) -> str:
 	return get_value(row * 30 + 1, col * 5)
@@ -71,7 +112,31 @@ def get_thrustCoef(row: int, col: int) -> list[str]:
 
 	return profile
 
-data: list[dict] = []
+vehicle_dicts: list[dict] = []
+for row_list in vehicle_sheet.iter_rows(min_row = 3):
+	if row_list[0].value is None or row_list[1].value is None:
+		continue
+
+	vehicle = str(row_list[0].value)
+	engine = str(row_list[1].value)
+
+	if vehicle in engine_conv:
+		if engine in engine_conv[vehicle]:
+			engine = engine_conv[vehicle][engine]
+
+	vehicle_dicts.append({
+		'addon': vehicle2addon(vehicle),
+		'engine': engine,
+		'zfw': int(str(row_list[3].value)),
+		'fuel': int(str(row_list[4].value)),
+		'gw': int(str(row_list[5].value)),
+		'milThrust': effNum(row_list[11].value),
+		'abThrust': effNum(row_list[12].value),
+		'fuelCap': effNum(row_list[24].value),
+		'ffRatio': effNum(row_list[25].value)
+	})
+
+thrust_dicts: list[dict] = []
 row: int = 0
 col: int = 0
 while get_vehicle(row, col) != '':
@@ -80,11 +145,11 @@ while get_vehicle(row, col) != '':
 		engine = get_engine(row, col)
 		thrustCoef = get_thrustCoef(row, col)
 
-		if vehicle in engine_dict:
-			if engine in engine_dict[vehicle]:
-				engine = engine_dict[vehicle][engine]
+		if vehicle in engine_conv:
+			if engine in engine_conv[vehicle]:
+				engine = engine_conv[vehicle][engine]
 
-		data.append({
+		thrust_dicts.append({
 			'addon': vehicle2addon(vehicle),
 			'engine': engine,
 			'thrustCoef': thrustCoef
@@ -105,25 +170,46 @@ for dir in os.listdir('addons/'):
 		vehicle = dir[8:]
 		engine = file[:-4]
 
-		target = [d for d in data if d['addon'] == dir]
-		config_engine = find_match(engine, [d['engine'] for d in target])
+		vehicle_candidates = [d for d in vehicle_dicts if d['addon'] == dir]
+		vehicle_engine = find_match(engine, [d['engine'] for d in vehicle_candidates])
 
-		if config_engine == '':
+		thrust_candidates = [d for d in thrust_dicts if d['addon'] == dir]
+		thrust_engine = find_match(engine, [d['engine'] for d in thrust_candidates])
+
+		if thrust_engine == '':
 			print(f'no match for {engine}')
 			continue
 
-		configs = [d for d in target if d['engine'] == config_engine]
-		if len(configs) != 1:
-			print(f'engine match error: {len(configs)} hits for {vehicle} {engine}')
+		vehicle_configs = [d for d in vehicle_candidates if d['engine'] == vehicle_engine]
+		thrust_configs = [d for d in thrust_candidates if d['engine'] == thrust_engine]
+		if len(vehicle_configs) != 1 or len(thrust_configs) != 1:
+			print(f'engine match error: {vehicle} {engine}')
 			continue
 
-		thrustCoef = configs[0]['thrustCoef']
+		vehicle_config = vehicle_configs[0]
+		thrustCoef = thrust_configs[0]['thrustCoef']
 		print(f'{vehicle} {engine}: match found')
 
 		idx0 = -1
 		with open(f'addons/{dir}/config/{file}', 'r') as f:
 			lines = f.readlines()
 			for idx, line in enumerate(lines):
+				for key in config_dict:
+					value = vehicle_config[config_dict[key]]
+					if 'CFT' in engine:
+						if key == 'fuelWeight':
+							value += fuelCFT
+						if key == 'fuelCapacity':
+							value = float(value)
+							value *= (fuelCFT + (vehicle_config[config_dict['fuelWeight']])) / (vehicle_config[config_dict['fuelWeight']])
+							value = effNum(value)
+
+					if key in line:
+						line = re.sub(r'\d', '', line)
+						line = line.replace('.', '')
+
+						line = line.replace(';', f'{value};')
+
 				if idx0 < 0:
 					if 'thrustCoef[]' in line:
 						idx0 = idx + 1

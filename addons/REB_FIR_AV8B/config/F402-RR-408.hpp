@@ -1,4 +1,4 @@
-		fuelCapacity = 492.3184;
+		fuelCapacity = 492.3;
 		thrustCoef[] = {
 			2.1157723917440974,
 			2.0175180720108750,
