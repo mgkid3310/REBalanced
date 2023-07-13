@@ -27,8 +27,6 @@ class RscInGameUI {
 			"CA_Alt",
 			//"CA_Radar",
 			"REB_AV8B_External_fuel_Progress",
-			"REB_AV8B_Afterburner_Status",
-			"REB_AV8B_Tailhook_Status",
 			"CA_Throttle"
 		};
 		class CA_ValueFuel: RscProgress {
@@ -46,34 +44,6 @@ class RscInGameUI {
 			y = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable ['IGUI_GRID_VEHICLE_Y', (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
 			w = "5 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "0.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-		};
-		class REB_AV8B_Tailhook_Status: RscPicture {
-			colorText[] = {
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_R',0])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_G',1])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_B',1])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_A',0.8])"
-			};
-			idc = 9907;
-			text = "REB_FIR_AV8B\ui\toggles_clear_ca.paa";
-			x = "8.0 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable ['IGUI_GRID_VEHICLE_X', (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
-			y = "3.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable ['IGUI_GRID_VEHICLE_Y', (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
-			w = "0.8 * (((safezoneW / safezoneH) min 1.2) / 40)";
-			h = "0.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-		};
-		class REB_AV8B_Afterburner_Status: RscPicture {
-			colorText[] = {
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_R',0])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_G',1])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_B',1])",
-				"(profilenamespace getvariable ['IGUI_TEXT_RGB_A',0.8])"
-			};
-			idc = 9908;
-			text = "REB_FIR_AV8B\ui\toggles_clear_ca.paa";
-			x = "8.9 * (((safezoneW / safezoneH) min 1.2) / 40) + (profilenamespace getvariable ['IGUI_GRID_VEHICLE_X', (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40))])";
-			y = "3.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (profilenamespace getvariable ['IGUI_GRID_VEHICLE_Y', (safezoneY + 0.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
-			w = "0.8 * (((safezoneW / safezoneH) min 1.2) / 40)";
-			h = "0.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
 	};
 };
