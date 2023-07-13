@@ -19,6 +19,6 @@ private _maxExternalFuel = getNumber (configFile >> "CfgVehicles" >> (typeOf _ve
 private _maxExternalRatio = _maxExternalFuel / _internalFuel;
 
 if (!(_unitInfo isEqualTo "") and (vehicle player isEqualTo _vehicle)) then {
-	(_unitInfo displayCtrl 9907) ctrlSetText format [QPATHUI(FA18_Toggles_%1_ca.paa), ["clear", "TailHook_ON"] select _isHookLowered];
+	(_unitInfo displayCtrl 9907) ctrlSetText format [QPATHUI(toggles_%1_ca.paa), ["clear", "tailhook"] select _isHookLowered];
 	(_unitInfo displayctrl 9910) progressSetPosition ((_vehicle getVariable ["AWESome_fuelEXT", 0])/ _maxExternalRatio);
 };

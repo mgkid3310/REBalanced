@@ -21,7 +21,7 @@ private _maxExternalRatio = _maxExternalFuel / _internalFuel;
 private _isNowAB = [_vehicle, _unitInfo] call FUNC(checkEngineAB);
 
 if (!(_unitInfo isEqualTo "") and (vehicle player isEqualTo _vehicle)) then {
-	(_unitInfo displayCtrl 9907) ctrlSetText format [QPATHUI(FA18_Toggles_%1_ca.paa), ["clear", "TailHook_ON"] select _isHookLowered];
-	(_unitInfo displayCtrl 9908) ctrlSetText format [QPATHUI(FA18_Toggles_%1_ca.paa), ["clear", "AfterBurner_ON"] select _isNowAB];
+	(_unitInfo displayCtrl 9907) ctrlSetText format [QPATHUI(toggles_%1_ca.paa), ["clear", "tailhook"] select _isHookLowered];
+	(_unitInfo displayCtrl 9908) ctrlSetText format [QPATHUI(toggles_%1_ca.paa), ["clear", "afterburner"] select _isNowAB];
 	(_unitInfo displayctrl 9910) progressSetPosition ((_vehicle getVariable ["AWESome_fuelEXT", 0])/ _maxExternalRatio);
 };
