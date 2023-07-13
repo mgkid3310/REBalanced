@@ -25,7 +25,7 @@ config_dict = {
 	'abFuelMultiplier': 'ffRatio'
 }
 
-fuelCFT = 1360
+fuelCFT = 1380 # 450 US Gallons = 1380 kg
 
 def rightpad(string: str, length: int = 18, char: str = '0') -> str:
 	string += max(length - len(string), 0) * char
