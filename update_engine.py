@@ -102,6 +102,7 @@ for dir in os.listdir('addons/'):
 		if file == 'common.hpp':
 			continue
 
+		vehicle = dir[8:]
 		engine = file[:-4]
 
 		target = [d for d in data if d['addon'] == dir]
@@ -111,8 +112,13 @@ for dir in os.listdir('addons/'):
 			print(f'no match for {engine}')
 			continue
 
-		target_config = [d for d in target if d['engine'] == config_engine][0]
-		thrustCoef = target_config['thrustCoef']
+		configs = [d for d in target if d['engine'] == config_engine]
+		if len(configs) != 1:
+			print(f'engine match error: {len(configs)} hits for {vehicle} {engine}')
+			continue
+
+		thrustCoef = configs[0]['thrustCoef']
+		print(f'{vehicle} {engine}: match found')
 
 		idx0 = -1
 		with open(f'addons/{dir}/config/{file}', 'r') as f:
