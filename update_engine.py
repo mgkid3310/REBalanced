@@ -1,4 +1,5 @@
 import os, re, openpyxl
+from math import log10, floor
 
 engine_profile = openpyxl.load_workbook('REB Engine Profile.xlsx', data_only = True)
 vehicle_sheet = engine_profile['IRL']
@@ -41,24 +42,12 @@ def effNum(number, count: int = 4) -> str:
 
 	if number == 0:
 		return '0'
-
-	text, num = '', 0
-	for idx, char in enumerate(str(number)):
-		if char == '.':
-			text += char
-		elif char == '0' and text == '':
-			text += char
-		elif count > num:
-			text += char
-			num += 1
-
-		if count == num:
-			if str(number)[idx + 1].isdigit():
-				if int(str(number)[idx + 1]) >= 5:
-					list_text = list(text)
-					list_text[-1] = str(int(text[-1]) + 1)
-					text = ''.join(list_text)
-			break
+	
+	text = f'%.{count}g' % number
+	if len(text) < count:
+		pad = count - len(text)
+		text += '.'
+		text += pad * '0'
 
 	return text
 
