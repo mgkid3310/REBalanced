@@ -1,5 +1,4 @@
 import os, re, openpyxl
-from math import log10, floor
 
 engine_profile = openpyxl.load_workbook('REB Engine Profile.xlsx', data_only = True)
 vehicle_sheet = engine_profile['IRL']
@@ -42,12 +41,14 @@ def effNum(number, count: int = 4) -> str:
 
 	if number == 0:
 		return '0'
-	
+
 	text = f'%.{count}g' % number
-	if len(text) < count:
-		pad = count - len(text)
-		text += '.'
-		text += pad * '0'
+	digits = len(text.replace('.', ''))
+
+	if digits < count:
+		if '.' not in text:
+			text += '.'
+		text += '0' * (count - digits)
 
 	return text
 
