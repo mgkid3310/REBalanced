@@ -16,7 +16,7 @@
 		elevatorControlsSensitivityCoef = 4.0;
 		aileronControlsSensitivityCoef = 4.0;
 		rudderControlsSensitivityCoef = 2.0;
-		wheelSteeringSensitivity = 1.4;
+		wheelSteeringSensitivity = 2.1;
 		elevatorSensitivity = 0.480;
 		aileronSensitivity = 0.800;
 		rudderInfluence = 0.360;
