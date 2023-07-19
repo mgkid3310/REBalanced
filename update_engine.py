@@ -42,15 +42,52 @@ def effNum(number, count: int = 4) -> str:
 	if number == 0:
 		return '0'
 
-	text = f'%.{count}g' % number
-	digits = len(text.replace('.', ''))
+	chars, length, rp = [], 0, 0
+	dot, ld = False, True
+	for char in list(str(number)):
+		if char == '.':
+			dot = True
 
-	if digits < count:
-		if '.' not in text:
-			text += '.'
-		text += '0' * (count - digits)
+		if length < count:
+			chars.append(char)
 
-	return text
+			if char.isdigit():
+				length += 1
+		else:
+			if char.isdigit():
+				if not dot:
+					rp += 1
+
+				if ld:
+					if int(char) >= 5:
+						chars[-1] = str(int(chars[-1]) + 1)
+					ld = False
+
+			if dot and not ld:
+				break
+
+	rev = chars[::-1]
+	cf = False
+	if rev[0].isdigit() and int(rev[0]) > 9:
+		rev[0] = '0'
+		cf = True
+
+	for idx, char in enumerate(rev):
+		if idx == 0 or not char.isdigit():
+			continue
+
+		if cf:
+			if char == '9':
+				rev[idx] = '0'
+			else:
+				rev[idx] = str(int(char) + 1)
+				cf = False
+
+	if cf:
+		rev.append('1')
+		rev = rev[:-1]
+
+	return ''.join(rev[::-1]) + '0' * rp
 
 def find_match(item: str, target: list[str]) -> str:
 	if item in target:
