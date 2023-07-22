@@ -82,7 +82,7 @@ def effNum(number, count: int = 4) -> str:
 
 	if cf:
 		rev.append('1')
-		rev = rev[:-1]
+		rev = rev[1:]
 
 	return ''.join(rev[::-1]) + '0' * rp
 
