@@ -36,10 +36,7 @@ def rightpad(string: str, length: int = 18, char: str = '0') -> str:
 	return string[:length]
 
 def effNum(number, count: int = 4) -> str:
-	if number is None:
-		return '0'
-
-	if number == 0:
+	if number is None or number == 0:
 		return '0'
 
 	chars, length, rp = [], 0, 0
