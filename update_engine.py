@@ -39,7 +39,8 @@ def effNum(number, count: int = 4) -> str:
 	if number is None or number == 0:
 		return '0'
 
-	chars, length, rp = [], 0, 0
+	chars: list[str] = []
+	length, rp = 0, 0
 	dot, ld = False, True
 	for char in list(str(number)):
 		if char == '.':
