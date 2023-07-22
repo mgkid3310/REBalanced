@@ -42,7 +42,7 @@ def effNum(number, count: int = 4) -> str:
 	chars: list[str] = []
 	length, rp = 0, 0
 	dot, ld = False, True
-	for char in list(str(number)):
+	for char in list(str(float(number))):
 		if char == '.':
 			dot = True
 
